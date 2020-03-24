@@ -1,0 +1,74 @@
+@charset 'utf-8';
+.fadeInUp{
+    animation: fadeInUp 0.3s;
+}
+.fadeInDown{
+    animation: fadeInDown 0.3s;
+}
+.fadeInLeft{
+    animation: fadeInLeft 0.3s;
+}
+.fadeInRight{
+    animation: fadeInRight 0.3s;
+}
+.progress{
+    animation: progress 0.3s;
+}
+@keyframes fadeInUp{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeInDown{
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeInDownMenu{
+    from{
+        transform: translate(-50%,-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translate(-50%,0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeInLeft{
+    from{
+        transform: translatex(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+@keyframes fadeInRight{
+    from{
+        transform: translatex(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+@keyframes progress{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}

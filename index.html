@@ -1,1 +1,575 @@
-work it project
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="메인페이지">
+    <meta name="keywords" content="클라우드펀딩,ㄴㄴㄴ">
+
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <meta name="og:title" content="와디지-메인"> 
+    <meta name="og:description" content="클라우드펀딩">
+    <meta name="og:image" content="./images/share_logo.jpg">
+
+    <meta name="twitter:title" content="와디지-메인"> 
+    <meta name="twitter:description" content="클라우드펀딩">
+    <meta name="twitter:image" content="./images/share_logo.jpg">
+
+    <title>와디지 메인</title>
+    <link rel="stylesheet" href="./css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script src="https://kit.fontawesome.com/5cf91d4eb4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./js/owl/owl.carousel.js"></script>
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex-box flex-j-space flex-a-center container">
+                <div class="dis-mobile flex-box">
+                    <div class="search-btn-cover">
+                        <button type="button" data-target="search-cover" onclick="activeAdd(this)"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="nav-left flex-box flex-j-space">
+                    <div class="logo">
+                        <a href="#"><img src="./images/logo.png" alt="로고"></a>
+                    </div>
+                    <div class="menu dis-pc">
+                        <ul class="gnb-menu flex-box position-rel">
+                            <li>
+                                <a class="hover-underline" href="#">메뉴1</a>
+                                <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="hover-underline" href="#">메뉴2</a>
+                                <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="hover-underline" href="#">메뉴3</a>
+                                <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="hover-underline" href="#">메뉴4</a>
+                                <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-right flex-box dis-pc">
+                    <div class="search-btn-cover">
+                        <button type="button" data-target="search-cover" onclick="activeAdd(this)"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="login-cover pl20">
+                        <a class="hover-main" href="#">로그인</a>
+                        <a class="pl10 hover-main" href="#">회원가입</a>
+                    </div>
+                    <div class="alerm-cover pl20">
+                        <a class="btn-stan btn-alerm" href="#">펀딩오픈 신청하기</a>
+                    </div>
+                </div>
+                <div class="dis-mobile flex-box">
+                    <div class="search-btn-cover">
+                        <button type="button" data-target="nav-mobile-menu" onclick="toggleBtn(this);"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="search-cover">
+                <div class="container">
+                    <form action="" method="GET" name="nav-search">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                        <input type="text" class="search-bar input-stan" placeholder="어떤 프로젝트를 찾고 계신가요?">
+                        <button type="button" class="search-btn close right" data-target="search-cover" onclick="activeRemove(this)"><i class="fas fa-times"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-mobile-menu">
+                <ul class="gnb-menu">
+                    <li class="flex-box flex-j-center">
+                        <a class="hover-main" href="#">로그인</a>
+                        <a class="pl10 hover-main" href="#">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="#">메뉴1</a>
+                        <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴2</a>
+                        <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴3</a>
+                        <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴4</a>
+                        <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="owl-carousel owl-hero owl-theme">
+                <div class="item">
+                    <a href="#">
+                        <div class="bg-hero-cover">
+                            <div class="bg-img bg-main" style="background-image: url(./images/main_1.jpg);"></div>
+                            <div class="container bg-txt">
+                                <div class="title mb20">잘 먹고 잘 쉬기<br>만원 혜택 받고 시작해요</div>
+                                <div class="sub-title">IT</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="bg-hero-cover">
+                            <div class="bg-img bg-main" style="background-image: url(./images/main_2.jpg);"></div>
+                            <div class="container bg-txt">
+                                <div class="title mb20">잘 먹고 잘 쉬기<br>만원 혜택 받고 시작해요</div>
+                                <div class="sub-title">IT</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="bg-hero-cover">
+                            <div class="bg-img bg-main" style="background-image: url(./images/main_3.jpg);"></div>
+                            <div class="container bg-txt">
+                                <div class="title mb20">잘 먹고 잘 쉬기<br>만원 혜택 받고 시작해요</div>
+                                <div class="sub-title">IT</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--슬라이더 버튼-->
+            <div class="owl_hero_cotainer container flex-box flex-j-space flex-a-flexend">
+                <div class="owl_hero_dots owl-dots"></div>
+                <div class="owl_hero_nav owl-dots"></div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <article class="container">
+                <h1 class="title mb10">
+                    리워드 프로젝트
+                </h1>
+                <h2 class="sub-title mb20">
+                    크라우디에서 핫한 프로젝트들을 만나보세요
+                </h2>
+                <div class="flex-box flex-j-space flex-wrap">
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                    <div class="item-box mb20">
+                        <a href="#">
+                            <div class="border-box">
+                                <div class="img-box">
+                                    <img src="./images/item_1.jpg">
+                                </div>
+                                <div class="txt-box">
+                                    <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
+                                    <p class="catogory mb20 gray">IT/가전 | 주식회사 너에게</p>
+                                    <div class="progress-bar mb10">
+                                        <span class="percent" style="width: 50%;"></span>
+                                    </div>
+                                    <div class="flex-box flex-j-space">
+                                        <p>
+                                            5,000만원<span class="ml5 gray">50%</span> 
+                                        </p>
+                                        <p class="gray">
+                                            28일 남음
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="border-animation border-1"></span>
+                            <span class="border-animation border-2"></span>
+                            <span class="border-animation border-3"></span>
+                            <span class="border-animation border-4"></span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="reward-description">
+            <div class="container" id="fadeInUp">
+                <h1 class="title mb30">Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quia aut minus. Architecto illum velit, quas cum repellendus, quia corporis consequuntur fuga ullam cumque excepturi sed. Incidunt molestiae alias beatae cupiditate excepturi. Voluptates soluta vitae quam sint doloribus non, iure magni, dolorum dolorem labore fugit placeat! Obcaecati eveniet quo magnam.</p>
+            </div>
+        </section>
+        <section>
+            <div class="container section-location">
+                <div class="flex-box flex-j-space flex-a-center flex-wrap ">
+                    <div class="col-lg-6 col-sm-12" id="fadeInLeft">
+                        <h1 class="title mb10">Location</h1>
+                        <p class="mb20">와디즈로 오시는길</p>
+                        <p class="gray mb10">주소</p>
+                        <p class="mb20">경기도 성남시 분당구 판교로 242 (삼평동) 판교 디지털 센터 A동 4층 402호</p>
+                        <div class="flex-box flex-wrap">
+                            <div class="col-lg-6 col-sm-12">
+                                <p class="gray mb10">Phone:</p>
+                                <p class="mb20">1661-9056</p>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <p class="gray mb10">Email:</p>
+                                <p class="mb20">info@wadiz.kr</p>
+                            </div>
+                        </div>
+                        <p class="gray mb10">Website:</p>
+                        <p>
+                            https://wadiz.co.kr
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 google-map" id="fadeInRight">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101324.72305476252!2d126.93800076924603!3d37.47494286708044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca7f433e4612b%3A0x6377f5a2f91812fa!2z7JmA65SU7KaI!5e0!3m2!1sko!2skr!4v1584952546931!5m2!1sko!2skr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="term-box">
+            <div class="container">
+                <a href="#">회원가입약관</a>
+                <a href="#">서비스이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">운영정책</a>
+                <a href="#">제휴문의</a>
+                <a href="#">공지사항</a>
+                <a href="#">인제채용</a>
+                <a href="#">SNS</a>
+            </div>
+        </div>
+        <div class="footer-box"> 
+            <div class="container flex-box flex-j-space flex-a-center flex-wrap">
+                <div class="footer-item pt30 pb30">
+                    <p>와디즈 대표 고객센터</p>
+                    <div>
+                        1661-9056
+                        <span class="gray ml5">
+                        | 카카오 채널@와디즈
+                        </span>
+                        <span class="gray ml5">
+                        | info@wadiz.kr
+                        </span>
+                        <span class="gray ml5">
+                        | 멤버십 고객센터 1811-9090
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-item pt30 pb30">
+                    <p class="gray">와디즈 플랫폼(주) | 대표이사 최동철 | 사업자등록번호 220-88-37661 | 경기도 성남시 분당구 판교로 242 (삼평동) 판교 디지털 센터 A동 4층 402호</p>
+                    <p>ⓒWADIZ Platform Co., Ltd</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    $('.owl-hero').owlCarousel({
+        loop:true,
+        nav:true,
+        items:1,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:false,
+        dotsContainer:".owl_hero_dots",
+        navContainer:".owl_hero_nav",
+        navContainerClass:"owl-nav"
+    });
+    $(function(){
+        $(window).scroll(function(){
+            var windowOffset = $(window).scrollTop();
+            var bodyOffset = $('body').offset();
+            if(windowOffset>bodyOffset.top){
+                $("nav").addClass("active");
+            }else{
+                $("nav").removeClass("active");
+            }
+            fadeAnimation("fadeInUp");
+            fadeAnimation("fadeInLeft");
+            fadeAnimation("fadeInRight");
+        });
+    });
+    function fadeAnimation(target){
+        var windowOffset = $(window).scrollTop();
+        var windowHeight= window.innerHeight;
+        var fadeTarget = $("#"+target).offset().top-windowHeight;
+        if(windowOffset>(fadeTarget)){
+            $("#"+target).addClass(target);
+        }
+    }
+    function activeAdd(btn){
+        target = $("."+$(btn).data("target"));
+        target.addClass("active fadeInRight");
+    }
+    function activeRemove(btn){
+        target = $("."+$(btn).data("target"));
+        target.removeClass("active fadeInRight");
+    }
+    function toggleBtn(btn){
+        if(!$(btn).hasClass("close")){
+            activeAdd(btn);
+            $(btn).addClass("close");
+        }else{
+            activeRemove(btn);
+            $(btn).removeClass("close");
+        }
+    }
+</script>
+</html>

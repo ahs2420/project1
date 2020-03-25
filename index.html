@@ -41,7 +41,7 @@
                 </div>
                 <div class="nav-left flex-box flex-j-space">
                     <div class="logo">
-                        <a href="#"><img src="./images/logo.png" alt="로고"></a>
+                        <a href="#"><img src="./images/logo.png" alt="로고" ></a>
                     </div>
                     <div class="menu dis-pc">
                         <ul class="gnb-menu flex-box position-rel">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="search-cover">
+            <div class="search-cover dis-pc">
                 <div class="container">
                     <form action="" method="GET" name="nav-search">
                         <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
@@ -115,8 +115,19 @@
                     </form>
                 </div>
             </div>
+            <!--모바일 삼선 메뉴-->
             <div class="nav-mobile-menu">
-                <ul class="gnb-menu">
+                <ul class="gnb-mobile-menu">
+                    <li>
+                        <div class="search-cover dis-pc">
+                            <div class="container">
+                                <form action="" method="GET" name="nav-search">
+                                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                                    <input type="text" class="search-bar input-stan" placeholder="어떤 프로젝트를 찾고 계신가요?">
+                                </form>
+                            </div>
+                        </div>
+                    </li>
                     <li class="flex-box flex-j-center">
                         <a class="hover-main" href="#">로그인</a>
                         <a class="pl10 hover-main" href="#">회원가입</a>
@@ -564,6 +575,7 @@
     }
     function toggleBtn(btn){
         if(!$(btn).hasClass("close")){
+            $("nav").addClass("active");
             activeAdd(btn);
             $(btn).addClass("close");
         }else{

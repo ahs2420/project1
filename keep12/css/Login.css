@@ -1,0 +1,61 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 0 auto;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+    width: 400px;
+    margin-top: 200px;
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+}
+.container h1 {
+    margin-top: 40px;
+}
+/* 모든 텍스트 박스 사이즈 */
+.all-textbox {
+    width: 400px;
+    height: 50px;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding-left: 15px;
+
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+
+.all-textbox:hover{
+    border: 1px solid #000;
+
+}
+
+.textbox-in{
+    font-size: 16px;
+    color:rgba(121, 119, 119, 0.1);
+    padding: 10px;
+}
+
+/*  버튼 사이즈  */
+.log-button {
+    background-color: #00c4c4;
+    color:rgba(255, 255, 255, 1);
+    border-collapse: collapse;
+    border-radius: 3px;
+    border: none;
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+.textbox-one{
+    margin-bottom: 8px;
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/log.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title>로그인 화면 </title>
+    <style>
+        .all-img {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            background-image: url(images/group.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        input[name=tab]:checked+label {
+            position: relative;
+        }
+
+        input[name=tab]:checked+label::after {
+            position: absolute;
+            content: "";
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: #00f;
+        }
+
+        .all-box {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+        .flex-box{
+            display: flex;
+        }
+        @media (max-width: 768px) {
+            .all-box {
+                width: 100%;
+
+                padding: 0 5%;
+                justify-content: center;
+
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="all-img">
+                <div class="all-box">
+                    <div class="sing-inup-box1">
+                        <div class="sing-ra-box">
+                            <div class="flex-box">
+                                <div class="radio-one">
+                                    <input id="hide" type="radio" name="tab" class="sign-in">
+                                    <label for="hide" class="radio-in">Sign In</label>
+
+                                </div>
+
+                                <div class="radio-two">
+                                    <input id="show" type="radio" name="tab" class="sign-up">
+                                    <label for="show" class="radio-up">Sign Up</label>
+
+                                </div>
+                            </div>
+                            <div class="hr-box">
+
+                            </div>
+
+                        </div>
+                        <div class="in-box1" id="inbox-text">
+                            <div class="in-box-id">
+                                <label for="userid" class="label">userid</label>
+                                <input type="text" id="userid" class="in-name-text">
+                            </div>
+                            <div class="in-box-pwd">
+                                <label for="in-pwd" class="label">password</label>
+                                <input type="password" id="in-pwd" class="in-pwd-text">
+                            </div>
+                            <div class="in-box-ke">
+                                <input type="checkbox" id="in-keep1" class="keep1">
+                                <label for="in-keep1" class="keep">keep me signed in</label>
+                            </div>
+                            <div class="in-box-bu">
+                                <div class="hr"></div>
+                                <button type="button" id="" class="in-button">sign in</button>
+                            </div>
+                            <div class="foot-lnk">
+                                <a href="#forgot" class="for">Forgot Password?</a>
+                            </div>
+
+                        </div>
+
+                        <div class="up-box1" id="upbox-text">
+
+                            <div class="up-box-text">
+
+                                <label for="up-userid" class="label">username</label>
+                                <input type="text" id="up-userid" class="up-name-text up-text-label">
+                                <!-- </div>
+                            <div class="up-box-pwd"> -->
+
+                                <label for="up-pwd" class="label">password</label>
+                                <input type="password" id="up-pwd" class="up-pwd-text up-text-label">
+
+                                <!-- </div>
+                            <div class="up-box-repwd"> -->
+
+                                <label for="up-repwd" class="label">repeatpassword</label>
+                                <input type="password" id="up-repwd" class="up-repwd-text up-text-label">
+                                <!-- </div>
+                            <div class="up-box-em"> -->
+                                <label for="up-email" class="label">emailaddress</label>
+                                <input type="text" id="up-email" class="up-email-text up-text-label">
+                                <!-- </div>
+        
+                            <div class="up-box-bu"> -->
+                                <!-- 
+                                <div class="hr"></div> -->
+                                <button type="button" id="" class="up-button">sign up</button>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script>
+    $(function () {
+        $("#upbox-text").hide();
+        $("#hr-two").hide();
+
+        $("#show").click(function () {
+            $("#upbox-text").show();
+            $("#inbox-text").hide();
+
+            $("#hr-two").show();
+
+
+        });
+    });
+    $(function () {
+        $("#hide").click(function () {
+
+            $("#inbox-text").show();
+            $("#upbox-text").hide();
+        });
+
+    });
+</script>
+
+</html>

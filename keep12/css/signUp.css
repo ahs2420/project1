@@ -1,0 +1,187 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 auto;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+    width: 400px;
+    overflow: hidden;
+    /* background-color: antiquewhite; */
+}
+
+.container h1 {
+    margin-top: 40px;
+}
+.signup-member{
+    color: rgba(0, 0, 0, 0.9);
+    margin-top:40px ;
+    margin-bottom: 15px;
+}
+.sing-all a{
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+
+.sing-all{
+    display: flex;
+    
+}
+.sing-all-angle{
+    display: inline-block ;
+    /* background-color: rosybrown; */
+    margin-left: 295px;  
+    cursor: pointer;
+}
+.sing-all-agree-subtext {
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.sing-all-ex{
+    margin-left: 30px;
+    font-size: 13px;
+    margin-top: 2px;
+}
+.colortest{background-color: rosybrown;}
+
+
+/* 모든 텍스트 박스 사이즈 */
+.all-textbox {
+    width: 400px;
+    height: 50px;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, .15);
+    padding-left: 15px;
+
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* 모든 텍스트 사이즈 */
+.all-subtext {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+/* 모드 버튼 색  */
+.sing-all-button {
+    background-color: #8de5e5;
+    color:rgba(255, 255, 255, 0.6);
+    border-collapse: collapse;
+    border-radius: 3px;
+    border: none;
+   
+}
+.sing-contents-pwd-box {
+    margin: 24px 0;
+    position:relative;
+}
+
+.sing-contents-email{
+    position: relative;
+    margin-top: 20px;
+}
+.sing-contents-email-button{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 90px;
+    height: 36px;
+    line-height: 36px;
+    margin: 5px 5px;
+    font-size: 15px;
+}
+
+
+.passwd-box{
+    margin-bottom: 10px;
+}
+
+.sing-end-button {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+}
+.eventma{margin-top: 5px;}
+
+.sing-event-one{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.sing-event-two{
+    font-size: 14px;
+    color:rgba(0, 0, 0,0.5);
+    
+}
+.sing-contents-event-box {
+    /* background-color: rosybrown; */
+    height: 150px;
+    
+
+}
+/* 텍스트 박스 안 그림  */
+.sing-contents-name-box{
+    position: relative;
+}
+.textbox-img-one{
+    position: absolute;
+    right: 3% ;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0,0, 0.3);
+    font-size: 20px;
+}
+.sing-contents-pwd-box{
+    position: relative;
+}
+.textbox-img-two{
+    position: absolute;
+    right: 3%;
+    top: 10%;
+    /* transform: translateY(-50%); */
+    color: rgba(0, 0,0, 0.3);
+    font-size: 20px;
+}
+
+.passwd-chack-box{
+    position: relative;
+}
+.textbox-img-three{
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    /* transform: translateY(-50%); */
+    color: rgba(0, 0,0, 0.3);
+    font-size: 20px;
+}
+
+/* .sing-contents-name-box{
+    position: relative;
+}
+
+.sing-contents-name-box::after{
+    content:url(images/regular.svg);
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/regular.svg);
+    background-color:transparent;
+    right:0;
+    top: 50%;
+    transform: translateY(-50%);
+   background-color: blanchedalmond;
+
+} */

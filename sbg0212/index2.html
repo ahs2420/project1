@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/9a4319ba17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Yellowtail&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            list-style: none;
+        }
+
+        .util-wrap {
+            background-color: #000;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
+            align-items: center;
+        }
+
+        
+        .util-left img{
+            width: 20px;
+            height: 20px;
+        }
+        .util-right {
+            background-color: tomato;
+        }
+
+        .gnb-wrap {
+            width: 100%;
+            height: 90px;
+            background-color: #fff;
+
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10%;
+            line-height: 90px;
+        }
+
+        .gnb-left {
+            background-color: tomato;
+        }
+
+        .gnb-mid {
+            background-color: tomato;
+        }
+
+        .gnb-right {
+            background-color: tomato;
+        }
+        /*hero img*/
+        .bg-content {
+            width:100%;
+            height: 800px;
+            background-color: #c6ecff;
+        }
+        .bg-text{
+            width: 50%;
+            display:flex ;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: #ccc;
+        }
+        .bg-text h2{
+            color:#2577fd ;
+            font-size: 60px;
+            font-family: 'Yellowtail', cursive;
+            font-weight: 400;
+        }
+        .bg-text h1{
+            font-size: 110px;
+            line-height: 1;
+            letter-spacing: 5px;/*글자간 좌우 거리 = 자간*/
+        }
+        .bg-text h3{
+            color:rgba(0,0,0,0.7);
+            font-style: italic; /*기울임꼴*/
+            font-weight: 400;
+            margin: 20px 0;
+        }
+        button.now{
+            background-color: #2577fd;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 20px;
+        }
+        .bg-content{
+            padding-left: 40px;
+            align-items: center;
+        }
+        .bg-flex{
+            width: 80%;
+            margin:0 auto;
+            display: flex;
+        }
+        .bg-img{
+            height: 800px;
+            width: 50%;
+        }
+        .bg-img img{
+            margin-top:0 auto ;
+        }
+        /*hero img*/        
+        main section {
+            padding: 100px 0;
+        }
+        .one-title h1{
+            font-size: 50px;
+            font-weight: 700;
+            background-color: #fff;
+            width: 94%;
+            margin:0 auto 50px auto;
+            text-align: center;
+
+        }
+
+        .one-items {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            flex-wrap:wrap;
+            margin: 0 auto;
+            
+        }
+
+        .one-item {
+            /*bg img 6가지*/
+            /*background-image: url(images/cat1.jpg);*/
+            width: 32%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .two-title {
+            margin:0 auto;
+            font-size: 40px;
+            font-weight: 700;
+            width: 60%;
+            border-bottom: 1px solid #ccc;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        .two-flex{
+            display:flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+        .two-flex h1{
+            font-size: 50px;
+        }
+        .two-flex .sub-menu a{
+            font-size:18px;
+            color:#aaa;
+            margin-left:30px;
+        }
+        .sub-menu > a.active{
+            color:#f00;
+        }
+        .two-flex .sub-menu {
+            font-size:18px;
+            color:#707070;
+            margin-left:30px;
+            font-weight: 300;
+        }
+        .two-items {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* 한줄의 넓이 100% 넘으면 여러 줄 */
+            padding: 0 20%;
+           
+        }
+
+        .two-item {
+            width: 32%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+           
+        }
+        .tag{
+            display:inline-block;
+            padding:5px 16px;
+            border-radius: 50px;
+            background-color: #f00;
+            color:#fff;
+            font-size: 18px;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .three-bg {
+            width: 100%;
+            height: 600px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .three-content{
+            width: 40%;
+            height: 300px;
+            background-color:#eee;
+        }
+        .hero-man{
+            width: 700px;
+            height: 700px;
+            background-color: #000;
+        }
+        .g-m-m{
+            font-size: 14px;
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .search{
+            width: 200px;
+            height: 45px;
+            border: 1px solid #ccc;
+            border-radius: 45px;
+            padding: 12px;
+            outline: none;
+            margin-right: 50px;
+            padding: 20px 0;
+            padding-left: 30px;
+        }
+        .search {
+         
+            
+        }
+        .pos {
+            position: relative;
+
+        }
+        .zoom {
+            position: absolute;
+            top: 32px;
+            left: 160px;
+            background-color: #fff;
+        }
+        .fa-search{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            color: gray;
+        }
+        .icon{
+            width: 50px ;
+            height: 50px;
+            line-height: 50px ;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            background-color: #fff;
+            text-align: center;
+      
+        }
+        .tag {
+
+            background-color: #00b1ff;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            position: absolute;
+            line-height: 30px;
+            top: -20px;
+            right: -10px;
+
+        }
+        .m-right{
+            margin-right: 20px;
+        }
+        .sign{
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            background-color: #2577fd;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 50px;
+        }
+        .u-r-r{
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #000;
+            color: #fff;
+        }
+        .util-left a  {
+            color:#fff;
+        }
+        .redtag{
+            padding: 5px 5px;
+            color: #fff;
+            border-radius: 7px;
+            background-color: red;
+            text-align: center;
+            line-height: 10px;
+            top: 80px;
+            font-size: 12px;
+            position: absolute;
+        }
+
+        
+        .wc{
+            color:#000;
+            font-family: 'Playfair Display SC', serif;
+            font-size: 70px;
+            left: 100px;
+            text-transform: capitalize;
+            font-style: italic;
+        }
+        .bs{    
+            color:#aaa;
+            font-family: 'Playfair Display SC', serif;
+        }
+        .one-flex{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+        }
+        .one-text{
+            margin-right: 5%;
+        }
+        .one-text h1{
+            font-size:40px
+        }
+        button.btn-one{
+            background-color:rgb(255,217,0) ;
+            color:#000;
+            padding: 15px 30px;
+            border-radius:50px ;
+            font-size: 16px;
+
+        }
+        .one-text h2{
+            font-size:25px;
+            color:#2577fd;
+            margin-top: -20px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="util-wrap">
+            <div class="util-left">
+                <img class="m-right" src="images/header_icon.webp" />
+                <a href="#" class="m-right">USA <i class="fas fa-angle-down"></i></a>
+                <a href="#">+777 2345 9874</a>
+            </div>
+            <div class="util-right">
+                <ul class="u-r-r">
+                    <li>My Account</li>
+                    <li>Wish List</li>
+                    <li>Shopping</li>
+                    <li>Cart</li>
+                    <li>Checkout</li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="gnb-wrap">
+            <div class="gnb-left">
+                <img src="images/logo.png"/>
+            </div>
+            <div class="gnb-mid">
+                <div class="g-m-m">
+                    <a href="#">Home</a>
+                    <a href="#">Catagori</a>
+                    <span>
+                        <a href="#">Latest</a>
+                        <a class="redtag">HOT</a>
+                    </span>
+                    <a href="#">Blog</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                </div>
+                
+            </div>
+            <div class="gnb-right">
+                <form action="f" class="pos">
+                    <input type="search" class="search" placeholder="Search products">
+                    <button class="zoom">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <span class="pos m-right">
+                    <i class="far fa-heart icon"></i>
+                    <span class="tag">02</span>
+                </span>
+                <span class="pos m-right"> 
+                    <i class="fas fa-shopping-cart icon"></i>
+                    <span class="tag">02</span>
+                </span>
+                <button class="sign">
+                    Sign in
+                </button>
+            </div>
+        </nav>
+
+        <div class="bg-wrap">
+            <div class="bg-content">
+                <div class="bg-flex">
+                    <div class="bg-img">
+                        <img src="images/hero_man.png">
+                    </div>
+                    <div class="bg-text">
+                        <div class="text-flex">
+                            <h2>60% Discount</h2>
+                            <h1>
+                                Winter <br>Collection
+                            </h1>
+                            <h3>
+                                Best Cloth Collcetion By 2020!
+                            </h3>
+                            <button class="now"> Shop Now</button>
+                        </div>    
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="one">
+            <div class="one-title"> <h1>섹션 ONE 타이틀</h1></div>
+            <div class="content">
+                <div class="one-items">
+                    <div class="one-item" style="background-image:url(images/cat1.jpg)">
+                        <div class="one-flex">
+                            <div class="one-text">
+                                <h1>Women'S</h1>
+                                <button class="btn-one">
+                                    Best New Deals
+                                </button>
+                                <h2>New Collection</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-item" style="background-image:url(images/cat2.jpg)">
+                        <div class="one-flex">
+                            <div class="one-text">
+                                <h1>Women'S</h1>
+                                <button class="btn-one">
+                                    Best New Deals
+                                </button>
+                                <h2>New Collection</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-item" style="background-image:url(images/cat3.jpg)">
+                        <div class="one-flex">
+                            <div class="one-text">
+                                <h1>Women'S</h1>
+                                <button class="btn-one">
+                                    Best New Deals
+                                </button>
+                                <h2>New Collection</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="two">
+            <div class="two-wrap">
+                <div class="two-title">
+                    <div class="two-flex">
+                        <h1>Latest Products</h1>
+                        <div class="sub-menu">
+                            <a href="#"class="active">All</a>
+                            <a href="#">New</a>
+                            <a href="#">Featured</a>
+                            <a href="#">Offer</a>
+                    </div>  
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="two-items">
+                    <div class="two-item" style="background-image:url(images/product1.png)">
+                        <span class="tag">
+                            New
+                        </span>
+                    </div>
+                    <div class="two-item" style="background-image:url(images/product2.png)">two box2</div>
+                    <div class="two-item" style="background-image:url(images/product3.png)">
+                        <span class="tag">
+                            New
+                        </span>
+                    </div>
+                    <div class="two-item" style="background-image:url(images/product4.png)">two box4</div>
+                    <div class="two-item" style="background-image:url(images/product5.png)">two box5</div>
+                    <div class="two-item" style="background-image:url(images/product6.png)">
+                        <span class="tag">
+                            New
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="three">
+            <div class="content">
+                <div class="three-bg">
+                    <div class="three-content">
+                        이미지 내용 입력
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="four"></section>
+        <section class="five"></section>
+        <section class="six"></section>
+        <section class="seven"></section>
+    </main>
+    <footer class="footer-wrap"></footer>
+</body>
+
+</html>

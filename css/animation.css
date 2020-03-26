@@ -14,6 +14,21 @@
 .progress{
     animation: progress 0.3s;
 }
+.hoverFadeInUp:hover{
+    animation: fadeInUp 0.3s;
+}
+.hoverFadeInDown:hover{
+    animation: fadeInDown 0.3s;
+}
+.hoverFadeInLeft:hover{
+    animation: fadeInLeft 0.3s;
+}
+.hoverFadeInRight:hover{
+    animation: fadeInRight 0.3s;
+}
+.hoverProgress:hover{
+    animation: progress 0.3s;
+}
 @keyframes fadeInUp{
     from{
         transform: translateY(20px);

@@ -117,6 +117,9 @@
       .owl_hero_dots .owl-dot span{
         height: 0px;
       }
+      .hero.item-only .owl_hero_cotainer{
+        display: none;
+      }
       @media (max-width:768px){
         .owl_hero_nav.owl-dots{
           display: none;

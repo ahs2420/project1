@@ -6,227 +6,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
-    <script src="https://kit.fontawesome.com/9a4319ba17.js" crossorigin="anonymous"></script>
-
-    <script
-  src="https://code.jquery.com/jquery-2.2.4.js"
-  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="  crossorigin="anonymous"></script>    
     <script src="js/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/9a4319ba17.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            color: #333;
-        }
-        a{
-            text-decoration: none;
-        }
-        ul li{
-            list-style: none;
-        }
-        section{
-            padding: 100px 0;
-        }
-        .container{
-            max-width: 1200px;
-            margin:0 auto;
-            width:100%;
-        }
-
-        .item-title{
-            padding-bottom:10px ;
-            border-bottom: 1px solid #ccc;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-        .select-custom{
-            position: relative;
-        }
-        .select-custom select {
-            -webkit-appearance: none;  /* 네이티브 외형 감추기 */
-            -moz-appearance: none;
-            appearance: none;
-            border:none;
-            padding:0 20px 0px 5px;
-            height: 30px;
-            cursor: pointer;
-            background-color: transparent;
-        }
-        .select-custom select+label{
-            position: absolute;
-            right:5px;
-            top:50%;
-            transform: translateY(-50%);
-            width: 15px;
-            height: 15px;
-            background: url(images/down-arrow.png) no-repeat;
-            background-position: center;
-            background-size: cover;
-            display: block;
-            z-index: -1;
-        }
-        /* IE 10, 11의 네이티브 화살표 숨기기 */
-        .select-custom select::-ms-expand {
-            display: none;
-        }
-        .btn{
-            display: flex;
-        }
-        .items{
-            margin-top:20px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .item{
-            width: 31%;
-        }
-        .img-box{
-            position: relative;
-            width: 100%;
-            padding-top: 56.25%;
-        }
-        .img-box img{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width:100%;
-            height:100%;
-            border-radius: 5px;
-        }
-        .text-box{
-            margin-top: 10px;
-        }
-        .text-box > *{ 
-            margin-top:10px ;
-        }
         
-        .text-box > :first-child{ 
-            margin-top:0px ;
-        }
-        .text-box .box-title{
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-        .text-box .sub-title{
-            font-size: 0.875rem;
-            font-weight: 600;
-            color:#999;
-
-        }
-        .bar{
-            width: 100%;
-            height: 3px;
-            background-color: #00b2b2;
-        }
-        .text-box .per{
-            margin-top: 5px;
-            display: flex;
-            justify-content: space-between;
-            font-weight: 600;
-            color: #999;
-        }
-        .per span{
-            color: #999;
-        }
-        .per div span:first-child{
-            color: #00b2b2;
-            font-size: 1.125rem;
-        }
-        .items > .item{
-            margin-bottom: 50px;
-        }
-        .it{
-
-        }
-        .owl-category{
-            padding: 0 40px;
-            margin-bottom:50px;
-        }
-        .owl-carousel .owl-item .it-img img{
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border:2px solid transparent ;
-            margin: 0 auto;
-        }
-
-        .owl-carousel .owl-item .it.on .it-img img{
-            border-color:#00b2b2;
-        }
-        .it-text{
-            text-align: center;
-        }
-        .on .it-text{ 
-            color:#00b2b2;
-        }
-        .custom.owl-nav{
-            margin-top: 0;
-
-        }
-        .custom .owl-prev, .custom .owl-next{
-            position: absolute;
-            top:50%;
-            transform: translateY(-50%);
-        }
-        .custom .owl-prev{
-            left:0;
-        }
-        .custom .owl-next{
-            right:0;
-        }
-        .owl-theme .owl-nav.custom [class*='owl-'] i{
-            font-size: 1.5rem;
-        }
-        .owl-theme .owl-nav.custom [class*='owl-']:not(.disabled) i{
-            color: inherit;
-        }
-
-        .owl-theme .owl-nav.custom [class*='owl-']:hover{
-            background-color: transparent;
-            color: #00b2b2;
-            transition:0.3s;
-        }
-        .owl-theme .owl-nav.custom [class*='owl-']{
-            margin: 0;
-            width: 40px;
-            height: 100%;
-            outline: none;
-        }
-        .next-btn{
-            border: 0;
-            border-radius: 50%;
-            outline: none;
-        }
-        .fa-arrow-circle-down{
-            color: #00b2b2;
-            font-size: 50px;
-            cursor:pointer;
-        }
-        @media (max-width: 1400px) {
-            .container{
-                padding: 0 5%;
-            }
-        }
-        @media (max-width: 1080px) {
-        
-        }
-        @media (max-width: 768px) {
-            .item{
-                width: 49%;
-            }
-        }
-        @media (max-width: 480px) {
-            
-            .item{
-                width: 100%;
-            }
-        
-        }
     </style>
 </head>
 <body>
@@ -382,7 +170,7 @@
                                 <div class="per">
                                     <div>
                                         <span>7641%</span>
-                                        <span>76,411,044원</span>
+                                        <span class="mobile-display-none">76,411,044원</span>
                                     </div>
                                     <span>12일 남음</span>
                                 </div>
@@ -401,7 +189,7 @@
                                 <div class="per">
                                     <div>
                                         <span>7641%</span>
-                                        <span>76,411,044원</span>
+                                        <span class="mobile-display-none">76,411,044원</span>
                                     </div>
                                     <span>12일 남음</span>
                                 </div>
@@ -420,7 +208,7 @@
                                 <div class="per">
                                     <div>
                                         <span>7641%</span>
-                                        <span>76,411,044원</span>
+                                        <span class="mobile-display-none">76,411,044원</span>
                                     </div>
                                     <span>12일 남음</span>
                                 </div>
@@ -439,7 +227,7 @@
                                 <div class="per">
                                     <div>
                                         <span>7641%</span>
-                                        <span>76,411,044원</span>
+                                        <span class="mobile-display-none">76,411,044원</span>
                                     </div>
                                     <span>12일 남음</span>
                                 </div>
@@ -458,7 +246,7 @@
                                 <div class="per">
                                     <div>
                                         <span>7641%</span>
-                                        <span>76,411,044원</span>
+                                        <span class="mobile-display-none">76,411,044원</span>
                                     </div>
                                     <span>12일 남음</span>
                                 </div>
@@ -477,7 +265,7 @@
                                 <div class="per">
                                     <div>
                                         <span>7641%</span>
-                                        <span>76,411,044원</span>
+                                        <span class="mobile-display-none">76,411,044원</span>
                                     </div>
                                     <span>12일 남음</span>
                                 </div>
@@ -488,7 +276,7 @@
             </div>
             <div class="container">
                 <div class="next-page">
-                    <button class="next-btn"><i class="fas fa-arrow-circle-down"></i></button>
+                    <button class="next-btn">상품 더보기</i></button>
 
                 </div>
             </div>
@@ -496,49 +284,5 @@
     </main>
 </body>
 <script>
-    $(function(){
-        $(".next-btn").click(function(){
-            var target=$(".items");
-            var pushItem= ajax("./ajaxitem.html");
-            target.append(pushItem.responseText);
-        });
-    });
-    $('.owl-carousel').owlCarousel({
-        loop:false,
-        nav:true,
-        dots:false,
-        navContainerClass:'owl-nav custom' ,
-        navText:['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'] ,
-        responsive:{
-            0:{
-                items:3,
-                slideBy:3
-            },
-            425:{
-                items:4,
-                slideBy:4
-            },
-            768:{
-                items:6,
-                slideBy:6
-            },
-            1080:{
-                items:10,
-                slideBy:10
-            }
-        }
-    });
-        function ajax(url){
-            var returnData = $.ajax({
-                async:false,
-                type:"post",
-                url:url,
-                dataType:"HTML",
-                succesc:function(data){
-                    return data;
-                }
-            });
-            return returnData;
-        }
 </script>
 </html>

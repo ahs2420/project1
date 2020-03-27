@@ -1,0 +1,46 @@
+@charset 'utf-8';
+.product-maker-img img{
+    width: 80px;
+    height: 80px;
+}
+.product-maker-link{
+    width: calc(95% - 80px);
+}
+.maker-sns-container a{
+    margin-left: 5px;
+}
+.maker-sns-container a:first-child{
+    margin-left: 0;
+}
+.maker-contact{
+    display: none;
+    background-color:#f5f5f5;
+    border-top: 1px solid #ccc;
+}
+.product-reward-item{
+    position: relative;
+}
+.product-reward-item a::after{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    content: '이 리워드 펀딩하기';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 100%;
+    background-color: var(--var-main-color-alpah);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+.product-reward-item.off a::after{
+    content: '마감된 펀딩 입니다.';
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.product-reward-item a:hover::after{
+    display: flex;
+}

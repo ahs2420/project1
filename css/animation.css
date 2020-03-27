@@ -1,33 +1,37 @@
 @charset 'utf-8';
+.transition{transition: 0.3s;}
 .fadeInUp{
-    animation: fadeInUp 0.3s;
+    animation: fadeInUp 0.3s ease;
 }
 .fadeInDown{
-    animation: fadeInDown 0.3s;
+    animation: fadeInDown 0.3s ease;
 }
 .fadeInLeft{
-    animation: fadeInLeft 0.3s;
+    animation: fadeInLeft 0.3s ease;
 }
 .fadeInRight{
-    animation: fadeInRight 0.3s;
+    animation: fadeInRight 0.3s ease;
 }
 .progress{
-    animation: progress 0.3s;
+    animation: progress 0.3s ease;
 }
 .hoverFadeInUp:hover{
-    animation: fadeInUp 0.3s;
+    animation: fadeInUp 0.3s ease;
 }
 .hoverFadeInDown:hover{
-    animation: fadeInDown 0.3s;
+    animation: fadeInDown 0.3s ease;
 }
 .hoverFadeInLeft:hover{
-    animation: fadeInLeft 0.3s;
+    animation: fadeInLeft 0.3s ease;
 }
 .hoverFadeInRight:hover{
-    animation: fadeInRight 0.3s;
+    animation: fadeInRight 0.3s ease;
 }
 .hoverProgress:hover{
-    animation: progress 0.3s;
+    animation: progress 0.3s ease;
+}
+.icon-rotate i{
+    transform: rotate(-180deg);
 }
 @keyframes fadeInUp{
     from{

@@ -53,11 +53,6 @@ main section{
     font-size: 1.5rem;
     font-weight: 500;
 }
-.small-title{
-    font-family: 'Roboto','Nanum Gothic', sans-serif; 
-    font-size: 1rem;
-    font-weight: 500;
-}
 .tiny-title{
     font-family: 'Roboto','Nanum Gothic', sans-serif; 
     font-size: 0.875rem;
@@ -78,6 +73,12 @@ main section{
 .hero .small-title{
     color: var(--var-main-color);
     font-weight: 700;
+}
+
+.small-title{
+    font-family: 'Roboto','Nanum Gothic', sans-serif; 
+    font-size: 1rem;
+    font-weight: 500;
 }
 .flex-box{
     display: flex;

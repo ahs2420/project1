@@ -26,10 +26,12 @@ body {
         align-items: center;
         display: flex;
     }
+
     .sing-inup-box1 {
     max-width:370px;
     width: 100%;
-    background-color: rgba(8, 19, 80, 0.774);
+    /* background-color: rgba(8, 19, 80, 0.774); */
+    background: linear-gradient(#081350c5,#4f515bc4);
     border-radius: 10px;
     
     padding: 30px;
@@ -44,10 +46,10 @@ body {
     border: 2px solid blue;
 } */
 
-.in-box1{
-    /* background-color: green; */
+/* .in-box1{
+    background-color: green;
    
-}
+} */
 
 
 input[type="radio"] { display: none;}
@@ -56,8 +58,8 @@ input[type="radio"] { display: none;}
     text-transform: capitalize;
     font-size: 20px;
     color: #fff;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 70px;
 }
 .radio-up{
     margin-left: 30px;
@@ -99,7 +101,7 @@ input[type="radio"] { display: none;}
 .in-box-id,.in-box-pwd,
 .in-box-bu{
     /* background-color: brown; */
-    height: 90px;
+    height: 100px;
 }
 .in-name-text,.in-pwd-text{
     margin-top:5px;
@@ -115,8 +117,10 @@ input[type="radio"] { display: none;}
     font-size: 13px;
     text-transform: capitalize;
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
 }
 
 
@@ -136,7 +140,7 @@ input[type="radio"] { display: none;}
     outline: none;
     padding-left: 15px;
     border: 1px solid rgba(0, 0, 0, .2);
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .up-box-text>.up-button {
@@ -147,11 +151,17 @@ input[type="radio"] { display: none;}
     text-transform: capitalize;
     font-weight: 700;
     margin: 20px 0 20px 0;
+    cursor: pointer;
+
+    border: none;
 }
-
+/* 
 .up-box1{
-    /* background-color: greenyellow; */
+    background-color: greenyellow;
 
+} */
+.in-box-ke{
+    margin-top: 10px;
 }
 
 .up-box-text{
@@ -165,24 +175,34 @@ input[type="radio"] { display: none;}
 
 
 .hr {
-    margin: -10px 0 10px 0;
-    border: 2px solid rgba(0, 0, 0, .2);
+    margin: 10px 0 11px 0;
+    border: 1px solid rgba(0, 0, 0, .2);
 }
 
-.foot-lnk {
-    
+.foot-lnk{
     text-align: center;
+
+}
+
+
+.foot-lnk a{
+    /* background-color: blue; */
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: 400;
+    /* margin-bottom: 10px; */
 }
 
 
 .site-box{
-    height:129px;
-    margin-top: 10px;
+    height:90px;
+    /* margin-top: 10px; */
     /* background-color: indigo; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px;
+    margin-top: 20px;
     
 }
 

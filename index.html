@@ -26,6 +26,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="./js/owl/owl.carousel.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
     <style>
         
     </style>
@@ -35,56 +36,78 @@
     <header>
         <nav>
             <div class="flex-box flex-j-space flex-a-center container">
+                <!--모바일 좌측 메뉴+ 마이페이지 메뉴-->
                 <div class="dis-mobile flex-box">
                     <div class="search-btn-cover">
                         <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+                        <span class="position-rel">
+                            <button class="mypage-btn round-img-box bg-img icon-40" style="background-image: url(./images/profile-1.png);"></button>
+                            <div class="mypage-menu">
+                                <div class="mypage-profile">
+                                    <div class="round-img-box bg-img icon-50 m-0a" style="background-image: url(./images/profile-1.png);">
+                                    </div>
+                                    <p class="mt10">XXXX님</p>
+                                    <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
+                                </div>
+                                <div class="mypage-link">
+                                    <ul>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-gift"></i> 펀딩한프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-marker"></i> 제작한 프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-cog"></i> 설정</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-power-off"></i> 로그아웃</span><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </span>
                     </div>
                 </div>
+                <!--모바일 좌측 메뉴+ 마이페이지 메뉴 끝-->
+                <!--pc좌측, 모바일 중앙메뉴-->
                 <div class="nav-left flex-box flex-j-space">
                     <div class="logo">
-                        <a href="#"><span class="main-color">W</span>a<span class="main-color">T</span>his</a>
+                        <a href="./index.html"><span class="main-color">W</span>a<span class="main-color">T</span>his</a>
                     </div>
                     <div class="menu dis-pc">
                         <ul class="gnb-menu flex-box position-rel">
                             <li>
-                                <a class="hover-underline" href="#">메뉴1</a>
-                                <ul class="sub-menu">
+                                <a class="hover-underline" href="./product.html">리워드</a>
+                                <!-- <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴3</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴4</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li>
                                 <a class="hover-underline" href="#">메뉴2</a>
-                                <ul class="sub-menu">
+                                <!-- <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴3</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴4</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li>
                                 <a class="hover-underline" href="#">메뉴3</a>
-                                <ul class="sub-menu">
+                                <!-- <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴3</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴4</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li>
                                 <a class="hover-underline" href="#">메뉴4</a>
-                                <ul class="sub-menu">
+                                <!-- <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴3</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴4</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                         </ul>
                     </div>
@@ -94,6 +117,25 @@
                         <button type="button" data-target="search-cover" onclick="activeAdd(this)"><i class="fas fa-search"></i></button>
                     </div>
                     <div class="login-cover pl20">
+                        <span class="position-rel">
+                            <button class="mypage-btn round-img-box bg-img  icon-40" style="background-image: url(./images/profile-1.png);"></button>
+                            <div class="mypage-menu">
+                                <div class="mypage-profile">
+                                    <div class="round-img-box bg-img icon-50 m-0a" style="background-image: url(./images/profile-1.png);">
+                                    </div>
+                                    <p class="mt10">XXXX님</p>
+                                    <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
+                                </div>
+                                <div class="mypage-link">
+                                    <ul>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-gift"></i> 펀딩한프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-marker"></i> 제작한 프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-cog"></i> 설정</span><i class="fas fa-chevron-right"></i></a></li>
+                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-power-off"></i> 로그아웃</span><i class="fas fa-chevron-right"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </span>
                         <a class="hover-main" href="#">로그인</a>
                         <a class="pl10 hover-main" href="#">회원가입</a>
                     </div>
@@ -133,9 +175,9 @@
                         <a class="hover-main" href="#">로그인</a>
                         <a class="pl10 hover-main" href="#">회원가입</a>
                     </li>
-                    <li>
-                        <a href="#">메뉴1</a>
-                        <ul class="sub-menu">
+                    <li class="mobile-menu">
+                        <button href="#">메뉴1</button>
+                        <ul class="sub-menu dis-none">
                             <li><a class="hover-main" href="#">서브메뉴1</a></li>
                             <li><a class="hover-main" href="#">서브메뉴2</a></li>
                             <li><a class="hover-main" href="#">서브메뉴3</a></li>
@@ -143,35 +185,35 @@
                             <li><a class="hover-main" href="#">서브메뉴5</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">메뉴2</a>
-                        <ul class="sub-menu">
+                    <li class="mobile-menu">
+                        <button href="#">메뉴2</button>
+                        <!-- <ul class="sub-menu">
                             <li><a class="hover-main" href="#">서브메뉴1</a></li>
                             <li><a class="hover-main" href="#">서브메뉴2</a></li>
                             <li><a class="hover-main" href="#">서브메뉴3</a></li>
                             <li><a class="hover-main" href="#">서브메뉴4</a></li>
                             <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li>
-                        <a href="#">메뉴3</a>
-                        <ul class="sub-menu">
+                    <li class="mobile-menu">
+                        <button href="#">메뉴3</button>
+                        <!-- <ul class="sub-menu">
                             <li><a class="hover-main" href="#">서브메뉴1</a></li>
                             <li><a class="hover-main" href="#">서브메뉴2</a></li>
                             <li><a class="hover-main" href="#">서브메뉴3</a></li>
                             <li><a class="hover-main" href="#">서브메뉴4</a></li>
                             <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
-                    <li>
-                        <a href="#">메뉴4</a>
-                        <ul class="sub-menu">
+                    <li class="mobile-menu">
+                        <button href="#">메뉴4</button>
+                        <!-- <ul class="sub-menu">
                             <li><a class="hover-main" href="#">서브메뉴1</a></li>
                             <li><a class="hover-main" href="#">서브메뉴2</a></li>
                             <li><a class="hover-main" href="#">서브메뉴3</a></li>
                             <li><a class="hover-main" href="#">서브메뉴4</a></li>
                             <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </ul>
             </div>

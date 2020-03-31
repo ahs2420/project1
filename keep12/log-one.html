@@ -41,18 +41,23 @@
             background-color: #0073b1;
 
         }
-
+        .all-img{
+            /* background-color: slategray; */
+            margin-top: 10px;
+        }
 
 
         .all-box {
             width: 50%;
             display: flex;
             justify-content: flex-end;
+            height: 700px;
 
         }
 
         .flex-box {
             display: flex;
+            /* background-color: slategray; */
         }
 
         /* 이용 약관 화면 */
@@ -101,12 +106,14 @@
             background-color: #fffbfb;
             border-radius: 50px;
             border-collapse: collapse;
+            cursor: pointer;
         }
 
         .modal-content {
             height: 400px;
             overflow-y: auto;
             margin-top: 20px;
+            /* background-color: saddlebrown; */
         }
 
 
@@ -117,14 +124,14 @@
         } */
 
         /* 체크박스  */
-        .modal-flex {
+        /* .modal-flex {
             position: relative;
             background-color: #00f;
-        }
+        } */
 
         .modal-text {
             height: 40px;
-
+            /* background-color: salmon; */
         }
 
         .modal-text h3 {
@@ -158,7 +165,10 @@
         .signup-ck {
             vertical-align: middle;
         }
-
+        .signup-a-box{
+            
+            font-size: 14px;
+        }
         .up-box-text a {
             vertical-align: baseline;
             display: inline;
@@ -184,21 +194,23 @@
 <body>
 
     <main>
-        <div class="container">
+        <div. class="container">
             <div class="all-img">
                 <div class="all-box">
                     <div class="sing-inup-box1">
                         <div class="sing-ra-box">
                             <div class="flex-box">
                                 <div class="radio-one">
-                                    <input id="hide" type="radio" name="tab" class="sign-in">
-                                    <label for="hide" class="radio-in">Logo In</label>
+                                    <input id="hide" type="radio" name="tab" class="sign-in" checked>
+                                    <label for="hide" class="radio-in">로그인</label>
+                                    <!-- <label for="hide" class="radio-in">Login</label> -->
 
                                 </div>
 
                                 <div class="radio-two">
                                     <input id="show" type="radio" name="tab" class="sign-up">
-                                    <label for="show" class="radio-up">Sign Up</label>
+                                    <label for="show" class="radio-up">회원가입</label>
+                                    <!-- <label for="show" class="radio-up">Sign Up</label> -->
 
                                 </div>
                             </div>
@@ -206,51 +218,57 @@
                         </div>
                         <div class="in-box1" id="inbox-text">
                             <div class="in-box-id">
-                                <label for="userid" class="label">userid</label>
+                                <label for="userid" class="label">이름</label>
+                                <!-- <label for="userid" class="label">userid</label> -->
+                                 
                                 <input type="text" id="userid" class="in-name-text">
                             </div>
                             <div class="in-box-pwd">
-                                <label for="in-pwd" class="label">password</label>
-                                <input type="password" id="in-pwd" class="in-pwd-text">
+                                <label for="in-pwd" class="label">비밀번호</label>
+                                <!-- <label for="in-pwd" class="label">password</label> -->
+                                <input type="password" id="in-pwd" class="in-pwd-text" >
                             </div>
                             <div class="in-box-ke">
                                 <input type="checkbox" id="in-keep1" class="signin-ck">
                                 <label for="in-keep1" class="keep">
-                                    <span class="keep-up">keep me signed in</span>
+                                    <span class="keep-up">아이디 저장</span>
+                                    <!-- <span class="keep-up">keep me signed in</span> -->
                                 </label>
                             </div>
                             <div class="in-box-bu">
                                 <div class="hr"></div>
-                                <button type="button" id="" class="in-button">sign in</button>
+                                <button type="button" id="" class="in-button">로그인</button>
+                                <!-- <button type="button" id="" class="in-button">sign in</button> -->
                             </div>
                             <div class="foot-lnk">
-                                <a href="#forgot" class="for">Forgot Password?</a>
+                                <a href="#forgot" class="for">비밀번호를 잊으셨나요?</a>
+                                <!-- <a href="#forgot" class="for">Forgot Password?</a> -->
                             </div>
                             <div class="site-box">
                                 <div class="facebook">
-                                    <a href="https://www.facebook.com" id="site">
+                                    <a href="https://www.facebook.com" id="site" target="_blank">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </div>
                                 <div class="google">
-                                    <a href="https://www.google.com" id="site" >
+                                    <a href="https://www.google.com" id="site" target="_blank" >
                                         <i class="fab fa-google"></i>
                                     </a>
                                 </div>
                                 <div class="wadiz">
-                                    <a href="https://www.wadiz.kr/web/wevent/202002?gclid=EAIaIQobChMI2qa5ztO36AIVfCCtBh2-7gniEAAYASAAEgLgifD_BwE" id="site">
+                                    <a href="https://www.wadiz.kr/web/wevent/202002?gclid=EAIaIQobChMI2qa5ztO36AIVfCCtBh2-7gniEAAYASAAEgLgifD_BwE" id="site" target="_blank">
                                         <i class="fab fa-weebly"></i>
                                     </a>
                                 </div>
        
                                 <div class="twitter">
-                                    <a href="https://twitter.com/explore" id="site">
+                                    <a href="https://twitter.com/explore" id="site" target="_blank">
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </div>
                                 
                                 <div class="linkedin">
-                                    <a href="https://kr.linkedin.com/" id="site">
+                                    <a href="https://kr.linkedin.com/" id="site" target="_blank">
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </div>
@@ -265,31 +283,36 @@
 
                             <div class="up-box-text">
 
-                                <label for="up-userid" class="label">username</label>
+                                <label for="up-userid" class="label">이름</label>
+                                <!-- <label for="up-userid" class="label">username</label> -->
                                 <input type="text" id="up-userid" class="up-name-text up-text-label">
                                 <!-- </div>
                             <div class="up-box-pwd"> -->
 
-                                <label for="up-pwd" class="label">password</label>
+                                <label for="up-pwd" class="label">비밀번호</label>
+                                <!-- <label for="up-pwd" class="label">password</label> -->
                                 <input type="password" id="up-pwd" class="up-pwd-text up-text-label">
 
                                 <!-- </div>
                             <div class="up-box-repwd"> -->
 
-                                <label for="up-repwd" class="label">repeatpassword</label>
+                                <label for="up-repwd" class="label">비밀번호 확인</label>
+                                <!-- <label for="up-repwd" class="label">repeatpassword</label> -->
                                 <input type="password" id="up-repwd" class="up-repwd-text up-text-label">
                                 <!-- </div>
                             <div class="up-box-em"> -->
-                                <label for="up-email" class="label">emailaddress</label>
+                                <label for="up-email" class="label">이메일 주소</label>
+                                <!-- <label for="up-email" class="label">emailaddress</label> -->
                                 <input type="text" id="up-email" class="up-email-text up-text-label">
                                 <input type="checkbox" name="term" value="1" class="signup-ck" />
-                                <a href="#" id="modal">개인정보 및 이용약관</a>
+                                <a href="#" id="modal" class="signup-a-box">개인정보 및 이용약관</a>
                                 <!-- </div>
         
                             <div class="up-box-bu"> -->
                                 <!-- 
                                 <div class="hr"></div> -->
-                                <button type="button" id="" class="up-button">sign up</button>
+                                <button type="button" id="" class="up-button">완료</button>
+                                <!-- <button type="button" id="" class="up-button">sign up</button> -->
                             </div>
 
 
@@ -310,6 +333,7 @@
                 <div class="modal-text">
                     <h3>개인정보 및 이용약관</h3>
                 </div>
+               
                 <div class="modal-close modal-close-img">
                     <i class="far fa-times-circle"></i>
                 </div>

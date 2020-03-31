@@ -1,6 +1,6 @@
 $(function(){
-    $(".next-btn").click(function(){
-        var target=$(".items");
+    $(".rewrad-next-btn").click(function(){
+        var target=$(".rewrad-items");
         var pushItem= ajax("./ajaxitem.html");
         target.append(pushItem.responseText);
     });

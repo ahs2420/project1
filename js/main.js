@@ -73,5 +73,6 @@ function productNavActive(){
         $(".product-nav").css("top",$("nav").height()+"px");
     }else{
         $(".product-nav").removeClass("active");
+        $(".product-nav").css("top","");
     }
 }

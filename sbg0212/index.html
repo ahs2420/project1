@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="arr-length"></p>
+    <button type="button" onclick="checkArr()">배열길이</button>
+    
+    <p id="arr"></p>
+    <button type="button" onclick="useArr()">배열사용</button>
+</body>
+    <script>
+        function checkArr(){
+            var txt = "abcdefghri"; //문자열(배열)
+            document.getElementById('arr-length').innerHTML = txt.length;
+        }
+        function useArr() {
+            //자바스크립트 타입 체크 x
+            //int[] i = new int[10] {1,2,3,4,5}
+
+            var arr =  ["서울특별시","부산광역시","대구광역시"]
+            document.getElementById('arr').innerHTML = arr[2];
+        }
+    </script>
+</html>

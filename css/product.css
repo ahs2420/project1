@@ -37,10 +37,88 @@
     font-weight: 700;
     color: #fff;
 }
+.product-reward-item.off a{
+    cursor: not-allowed;
+}
 .product-reward-item.off a::after{
     content: '마감된 펀딩 입니다.';
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(192, 192, 192, 0.5);
+    display: flex;
 }
 .product-reward-item a:hover::after{
     display: flex;
+}
+.show-menu{
+    border-top: 1px solid #ccc;
+    font-size: 2rem;
+    outline: none;
+    transition: 0.3s;
+}
+.product-menu li.on{
+    position: relative;
+}
+.product-menu li.on::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    height: 4px;
+    background-color: var(--var-main-color);
+}
+@media (max-width:1400px){
+    
+}
+@media (max-width:1080px){
+}
+@media (max-width:768px){
+    .product-main{
+        width: 100%;
+    }
+    .product-aside{
+        width: 100%;
+    }
+    .product-status{
+        position: fixed;
+        width: 100%;
+        z-index: 98;
+        bottom: 0px;
+        left: 0;
+        background: #fff;
+        margin: 0;
+    }
+    .product-status-txt-container{
+        padding: 20px 5%;
+        border-top: 1px solid #ccc;
+    }
+    .product-status-txt-container{
+        display: none;
+    }
+    .product-status-txt-container > div:last-child{
+        margin-bottom: 0;
+    }
+    .product-btn-container{
+        padding: 10px 4%;
+        border-top: 1px solid #ccc;
+    }
+    .product-btn-container .flex-box{
+        flex-direction: row-reverse;
+    }
+    .product-btn-container .flex-box > *{
+        width: 15%;
+        padding: 0;
+        font-size: 1rem;
+    }
+    .product-btn-container .flex-box > *:first-child{
+        width: 68%;
+    }
+    
+}
+@media (max-width:480px){
+    
+}
+@media (min-width:769px){
+    .product-status-txt-container{
+        display: block !important;
+    }
 }

@@ -29,7 +29,8 @@ body,input,select,textarea{
 input,select,textarea{
     color: #333;
 }
-button,input[type=submit]{
+a,button,input[type=submit]{
+    outline: none;
     cursor: pointer;
 }
 button{
@@ -124,6 +125,7 @@ main section{
 .footer-box{
     color: #fff;
 }
+.m0{margin: 0px !important;}
 .m10{margin: 10px;}
 .m20{margin: 20px;}
 .m30{margin: 30px;}
@@ -157,6 +159,7 @@ main section{
 .mr50{margin-right: 50px;}
 .mr100{margin-right: 100px;}
 .m-0a{margin: 0 auto;}
+.p0{padding: 0px !important;}
 .p10{padding: 10px;}
 .p20{padding: 20px;}
 .p30{padding: 30px;}
@@ -175,6 +178,7 @@ main section{
 .pt40{padding-top: 40px;}
 .pt50{padding-top: 50px;}
 .pt100{padding-top: 100px;}
+.pl5{padding-left: 5px;}
 .pl10{padding-left: 10px;}
 .pl20{padding-left: 20px;}
 .pl30{padding-left: 30px;}
@@ -183,6 +187,7 @@ main section{
 .pl100{padding-left: 100px;}
 .pl3p{padding-left: 3%;}
 .pl5p{padding-left: 5%;}
+.pr5{padding-right: 5px;}
 .pr10{padding-right: 10px;}
 .pr20{padding-right: 20px;}
 .pr30{padding-right: 30px;}
@@ -260,6 +265,13 @@ main section{
 .col-lg-11{width: calc(100% * 11 / 12);}
 .col-lg-12{width: 100%;}
 
+.line-height-15{line-height: 1.5;}
+.line-height-17{line-height: 1.7;}
+.line-height-2{line-height: 2;}
+.line-height-3{line-height: 3;}
+.letter-space-5{letter-spacing: 5px;}
+.letter-space-3{letter-spacing: 3px;}
+.letter-space-m1{letter-spacing: -1px;}
 .logo{
     font-family: 'Righteous', cursive;
     font-size: 2rem;
@@ -656,6 +668,9 @@ nav.active{
 .nav-mobile-menu,.nav-mobile-menu.active{
     display: none;
 }
+.reward-info{
+    padding: 0;
+}
 .reward-info-item{
     width: 33.33%;
     min-height: 500px;
@@ -682,7 +697,7 @@ nav.active{
     line-height: 60px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    z-index: 100;
+    z-index: 99;
 }
 .product-nav li a{
     height: 100%;
@@ -730,8 +745,12 @@ nav.active{
 .news-items:last-child .news-img{
     height: 100%;
 }
-.product-main{
+.product-items{
     width: calc(95% - 300px);
+    display: none;
+}
+.product-items.on{
+    display: block;
 }
 .product-aside{
     width: 300px;
@@ -790,7 +809,7 @@ nav.active{
     color: #fff;
 }
 .bg-instagram:hover{
-    background:linear-gradient(#7024C4,#C21975,#C74C4D,#E09B3D);
+    background:linear-gradient(225deg,#7024C4,#C21975,#C74C4D,#E09B3D);
     border: 1px solid transparent;
 }
 .bg-twitter:hover{
@@ -812,6 +831,9 @@ nav.active{
     }
 }
 @media (max-width:1080px){
+    main section{
+        padding: 75px 0;
+    }
     .laptop-dis-none{
         display: none;
     }
@@ -833,8 +855,14 @@ nav.active{
     .news-items:first-child .news-item:last-child{
         margin-top: 0;
     }
+    nav .btn-alerm{
+        display: none;
+    }
 }
 @media (max-width:768px){
+    main section{
+        padding: 50px 0;
+    }
     body{
         font-size: 0.875rem;
     }
@@ -946,6 +974,9 @@ nav.active{
         line-height: 30px;
         color: #fff;
         border: none;
+    }
+    .gnb-mobile-menu .search-cover .search-bar::placeholder{
+        font-size: 0.875rem;
     }
     .nav-mobile-menu li:first-child{
         padding-top: 0px;

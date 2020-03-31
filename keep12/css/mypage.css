@@ -1,0 +1,508 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 큰 박스 부분 */
+.head-con {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 24px;
+
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-box {
+    flex-basis: 15%;
+    /* background-color: firebrick; */
+
+
+}
+
+.box2-funReady {
+    width: 100%;
+    /* background-color: forestgreen; */
+    padding: 40px 66px;
+
+}
+
+
+/* header 부분 */
+.head-con .logo {
+    flex-basis: 20%;
+    /* background-color: turquoise; */
+    text-align: center;
+}
+
+
+
+.head-userid {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+.userlogo {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: teal;
+    color: #fff;
+    vertical-align: baseline;
+}
+
+.username {
+    margin-left: 10px;
+}
+
+.head-close {
+    flex-basis: 30%;
+    display: flex;
+    /* background-color: teal; */
+    justify-content: flex-end;
+    align-items: center;
+    display: flex-end;
+}
+
+.head-show {
+    width: 100px;
+    height: 35px;
+    list-style: 35px;
+    padding: 0 16px;
+
+    border: none;
+    border: 2px solid #6ac5b8;
+    border-collapse: collapse;
+    border-radius: 50px;
+
+    color: #6ac5b8;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.head-show:hover {
+    color: #fff;
+    background-color: #6ac5b8;
+}
+
+.head-out {
+    width: 75px;
+    height: 35px;
+    list-style: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6ac5b8;
+
+    border: 2px solid #6ac5b8;
+    border-radius: 50px;
+    border: none;
+    border-collapse: collapse;
+
+    background-color: transparent;
+}
+
+/* 리워드 메뉴 부분 */
+/* .menu-box {
+    background-color: khaki;
+
+} */
+
+.box1-menu {
+    width: 100%;
+    height: auto;
+    padding: 24px 24px;
+    background: linear-gradient(118deg, #8fcebb, #85cfd3);
+}
+
+.box1-menu {
+    overflow: hidden;
+}
+
+.reward-box-btn {
+    /* background-color: tomato; */
+
+    margin-bottom: 10px;
+}
+
+.box-btn1 {
+    width: 50px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 4px;
+    padding: 1px 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.box-btn2 {
+    width: 100px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 4px;
+    padding: 1px 4px;
+    background-color: transparent;
+    margin-left: 4px;
+    outline: none;
+}
+
+.reward-box h2 {
+
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* .reward-hide{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    display: none;
+} */
+.jq-box {
+    /* background-color: tomato; */
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.jq-box ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.reward-box-num ul {
+    display: none;
+}
+
+.reward-box-num {
+    margin-bottom: 10px;
+
+}
+
+.reward-box-num a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.reward-box-num i {
+    color: #fff;
+
+    list-style: none;
+
+    margin-left: 115px;
+}
+
+.reward-box p {
+    font-size: 13px;
+    color: #fff;
+
+}
+
+.reward-box-url {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 12px;
+
+}
+
+.menu-text1 {
+    padding: 16px 24px;
+    position: relative;
+    /* background-color: lawngreen; */
+
+}
+
+.menu-text1 a {
+    text-decoration: none;
+    /* background-color: lightcoral; */
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.menu-text1 i {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: rgba(0, 0, 0, .8);
+}
+
+.menu-text1 ul {
+    padding-left: 44px;
+    display: none;
+}
+
+.menu-text1 ul li {
+    list-style: none;
+    padding: 16px 24px;
+}
+
+.menu-text2 {
+    font-size: 13px;
+    position: relative;
+    padding: 16px 24px;
+
+}
+
+.menu-text2 a {
+    text-decoration: none;
+    /* background-color: lightcoral; */
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.menu-text2 i {
+
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: rgba(0, 0, 0, .8);
+}
+
+
+/* 리워드 펀딩 준비 부분 */
+.fun-wrap {
+    width: 100%;
+    height: 107px;
+    /* background-color: goldenrod; */
+}
+
+
+.fun-ready2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 805px;
+    /* background-color: rebeccapurple; */
+}
+
+.ready-state {
+    flex-basis: 70%;
+
+}
+
+.ready-wrap {
+    /* background-color: salmon; */
+    width: 100%;
+    height: 107px;
+    margin-bottom: 32px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    padding: 16px;
+}
+
+.ready-state-left {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: saddlebrown; */
+}
+
+/* .ready-pro-text{
+display: flex;
+} */
+
+
+
+.ready-pro-text h4::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: tomato;
+    margin-right: 8px;
+}
+
+
+
+
+.fun-ready {
+    width: 100%;
+    height: 90px;
+
+    padding: 16px 32px;
+    margin-bottom: 16px;
+    /* background-color: springgreen; */
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, .1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 6px solid #00b2b2;
+
+}
+
+
+
+.readybox-basic-end .ready-btn {
+    margin-top: 50px;
+    width: 30%;
+    font-weight: 700;
+    /* height: 100px; */
+    background-color: #8de5e5;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.readybox-basic h2 {
+    /* background-color: steelblue; */
+    vertical-align: sub;
+    font-size: 18px;
+
+    display: inline;
+}
+
+
+
+
+.readybox-basic h6 {
+    vertical-align: baseline;
+    display: inline;
+    color: #6ac5b8;
+    ;
+}
+
+/* 작성하기 버튼*/
+.ready-btn {
+    width: 112px;
+    height: 48px;
+    padding: 1.2px 24px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* 리워드 광고 부분*/
+.adver-boxwrap {
+    width: 300px;
+    /* height: 107px; */
+    height: 618px;
+    margin-left: 132px;
+    background-color: #fff;
+
+}
+
+.adver-box {
+    width: 300px;
+    height: 107px;
+    margin-bottom: 16px;
+    background-color: turquoise;
+}
+
+.adver-box1 {
+    /* background-color: royalblue; */
+    width: 300px;
+    height: 107px;
+    margin-bottom: 32px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+
+}
+
+.adver-box1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.adver-box1 .box1-center {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box1-center span,
+.box1-center a {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.adver-box1:hover img {
+    opacity: 0.4;
+
+}
+
+.box1-center .box1-center::before {
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.adver-box1:hover .box1-center::before {
+    background-color: thistle;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    opacity: 1;
+    text-decoration: 0.4s;
+}
+
+.adver-box1:hover .box1-center span {
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+
+.adver-box1:hover .box1-center a {
+    opacity: 1;
+    transition-delay: 0.1s;
+
+}
+
+
+.adver-box1 span {
+
+    font-size: 15px;
+    color: #fff;
+}
+
+.adver-box1 a {
+    font-size: 30px;
+    color: #fff;
+}
+
+
+/* 제이쿼리 문  */

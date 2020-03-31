@@ -200,10 +200,10 @@
         </div>
         <div class="product-nav">
             <ul class="product-menu flex-box flex-j-center">
-                <li><a href="#">스토리</a></li>
-                <li><a href="#">펀딩 안내</a></li>
-                <li><a href="#">새소식</a></li>
-                <li><a href="#">커뮤니티</a></li>
+                <li class="bold on"><a class="product-view-btn" href="#product-main" data-target=".product-items">스토리</a></li>
+                <li class="bold"><a class="product-view-btn" href="#product-info" data-target=".product-items">펀딩 안내</a></li>
+                <li class="bold"><a class="product-view-btn" href="#product-news" data-target=".product-items">새소식</a></li>
+                <li class="bold"><a class="product-view-btn" href="#product-community" data-target=".product-items">커뮤니티</a></li>
                 <!-- <li><a href="#">서포터</a></li> -->
             </ul>
         </div>
@@ -212,7 +212,16 @@
     <main>
         <section>
             <div class="container max1000 flex-box flex-j-space flex-wrap">
-                <article class="product-main">
+                <article class="product-items product-info" id="product-info">
+                    펀딩안내
+                </article>
+                <article class="product-items product-news" id="product-news">
+                    새소식
+                </article>
+                <article class="product-items product-community" id="product-community">
+                    커뮤니티
+                </article>
+                <article class="product-items product-main on" id="product-main">
                     <div class="owl-carousel mb20">
                         <div class="item">
                             <img src="./images/item_1.jpg">
@@ -227,40 +236,53 @@
                     <div class="small-title bold mb20">
                         누적 9.5억 펀딩 "진짜 로봇" 물걸레 로봇청소기, 스페셜 블랙 에디션으로 돌아왔습니다! 청소할 시간이 그렇게 많으면, 넌 놀기나 해! 똑똑한 진짜 로봇청소기 지금 시작합니다!
                     </div>
-                    <div class="product-green-box">
+                    <div class="product-green-box mb20">
                         <div class="main-color mb20">
                             <span class="bold">목표금액</span> 10,000,000원&nbsp;&nbsp;<span class="bold">펀딩기간</span> 2020.03.26~2020.04.20
                         </div>
                         <p>100% 이상 모이면 펀딩이 성공되는 프로젝트</p>
                         <p>이 프로젝트는 펀딩 마감일까지 목표 금액이 100% 모이지 않으면 결제가 진행되지 않습니다.</p>
                     </div>
+                    <div class="sub-title bold mb20"> 
+                        프로젝트 스토리
+                    </div>
+                    <div class="product-story">
+                        <img src="./images/product-1.jpg" />
+                    </div>
                 </article>
                 <aside class="product-aside">
-                    <div class="product-status mb10">
-                        <div class="title mb30">25일 남음</div>
-                        <div class="progress-bar mb30">
-                            <span class="percent" style="width: 50%;"></span>
+                    <div class="product-status mb20">
+                        <div class="dis-mobile">
+                            <button type="button" class="show-menu box w-100p h-100p" data-target=".product-status-txt-container" onclick="slideToggle(this)">
+                                <i class="fas fa-angle-up transition"></i>
+                            </button>
                         </div>
-                        <div class="mb30 bold">
-                            <span class="sub-title">1141</span> % 달성
-                        </div>
-                        <div class="mb30 bold">
-                            <span class="sub-title">114,141,700</span> 원 펀딩
-                        </div>
-                        <div class="mb30 bold">
-                            <span class="sub-title">403</span> 명의 서포터
-                        </div>
-                        <div class="product-btn-container mb10">
-                            <div class="w-100p">
-                                <a href="#" class="btn-stan funding-btn on"><i class="fas fa-gift"></i> 펀딩하기</a>
+                        <div class="product-status-txt-container">
+                            <div class="title mb20">25일 남음</div>
+                            <div class="progress-bar mb20">
+                                <span class="percent" style="width: 50%;"></span>
+                            </div>
+                            <div class="mb20 bold">
+                                <span class="sub-title">1141</span> % 달성
+                            </div>
+                            <div class="mb20 bold">
+                                <span class="sub-title">114,141,700</span> 원 펀딩
+                            </div>
+                            <div class="mb20 bold">
+                                <span class="sub-title">403</span> 명의 서포터
                             </div>
                         </div>
-                        <div class="flex-box flex-j-space">
-                            <a href="#" class="btn-stan w-49p"><i class="far fa-question-circle"></i> 문의하기</a>
-                            <a href="#" class="btn-stan w-49p"><i class="fas fa-share-square"></i> 공유하기</a>
+                        <div class="product-btn-container">
+                            <div class="flex-box flex-j-space flex-wrap">
+                                <div class="w-100p">
+                                    <a href="#" class="btn-stan funding-btn on mb10"><i class="fas fa-gift"></i> 펀딩하기</a>
+                                </div>
+                                <a href="#" class="btn-stan w-49p"><i class="far fa-question-circle"></i> <span class="dis-pc">문의하기</span></a>
+                                <a href="#" class="btn-stan w-49p"><i class="fas fa-share-square"></i> <span class="dis-pc">공유하기</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-maker mb10">
+                    <div class="product-maker mb20">
                         <div class="gray bold tiny-title mb10">메이커 정보</div>
                         <div class="gray-box">
                             <div class="product-maker-info">
@@ -285,7 +307,7 @@
                                 </div>
                                 <div class="pt20 pb20 pr5p pl5p border-top">
                                     <div class="btn-box">
-                                        <button class="btn-stan w-100p" href="#">메이커에게 문의하기</button>
+                                        <button class="btn-stan w-100p small-title" href="#"><i class="far fa-question-circle"></i> 메이커에게 문의하기</button>
                                     </div>
                                 </div>
                                 <div class="border-top">
@@ -307,7 +329,7 @@
                             <div class="product-reward-item gray-box pt20 pb20 pl5p pr5p mb20">
                                 <a href="#">
                                     <p class="sub-title bold mb10">229,000원 펀딩</p>
-                                    <p class="sub-content mb10">솔로버드[블랙]</p>
+                                    <p class="small-title bold mb10">솔로버드[블랙]</p>
                                     <p class="gray tiny-content bold">리워드</p>
                                     <p class="gray tiny-content mb20 bold">로보백 1 세트</p>
                                     <p class="gray tiny-content bold">가격 해택</p>
@@ -320,14 +342,14 @@
                                     <p class="gray small-content mb20">3,000원</p>
                                     <p class="gray tiny-content bold">리워드 발송 시작일</p>
                                     <p class="gray small-content mb20">2020년 05월 말(21~말일) 예정</p>
-                                    <p class="gray tiny-content bold"><span class="main-color">제한수량 1000개 <span class="bg-main-alpha-color">현재 687개 남음 !</span></span></p>
+                                    <p class="gray tiny-content bold"><span class="main-color">제한수량 1000개 <span class="bg-main-alpha-color pl5 pr5">현재 687개 남음 !</span></span></p>
                                     <p class="gray small-content">총 313개 펀딩 완료</p>
                                 </a>
                             </div>
                             <div class="product-reward-item off gray-box pt20 pb20 pl5p pr5p mb20">
                                 <a href="#">
                                     <p class="sub-title bold mb10">229,000원 펀딩</p>
-                                    <p class="sub-content mb10">솔로버드[블랙]</p>
+                                    <p class="small-title bold mb10">솔로버드[블랙]</p>
                                     <p class="gray tiny-content bold">리워드</p>
                                     <p class="gray tiny-content mb20 bold">로보백 1 세트</p>
                                     <p class="gray tiny-content bold">가격 해택</p>
@@ -340,12 +362,19 @@
                                     <p class="gray small-content mb20">3,000원</p>
                                     <p class="gray tiny-content bold">리워드 발송 시작일</p>
                                     <p class="gray small-content mb20">2020년 05월 말(21~말일) 예정</p>
-                                    <p class="gray tiny-content bold"><span class="main-color">제한수량 1000개 <span class="bg-main-alpha-color">현재 687개 남음 !</span></span></p>
+                                    <p class="gray tiny-content bold"><span class="main-color">제한수량 1000개 <span class="bg-main-alpha-color pl5 pr5">현재 687개 남음 !</span></span></p>
                                     <p class="gray small-content">총 313개 펀딩 완료</p>
                                 </a>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="product-report">
+                        <div class="gray-box pt20 pb20 pr5p pl5p">
+                            <p class="bold mb10">신고하기란?</p>
+                            <p class="tiny-content mb10">해당 프로젝트에 허위내용 및 지적재산권을
+                            침해하는 내용이 있다면 제보해주세요.</p>
+                            <a href="#" class="btn-stan w-100p"><i class="fas fa-bell"></i> 신고하기</a>
+                        </div>
                     </div>
                 </aside>
             </div>
@@ -390,19 +419,32 @@
     </footer>
 </body>
 <script>
-$(".owl-carousel").owlCarousel({
-    loop:true,
-    nav:false,
-    dots:false,
-    items:1,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:false,
-});
 function slideToggle(button){
     var target = $($(button).data("target"));
     $(button).toggleClass("icon-rotate");
     target.slideToggle(300);
 }
+$(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:false,
+        nav:false,
+        dots:false,
+        items:1,
+    });
+});
+$(function(){
+    $(".product-view-btn").click(function(e){
+        var target=$(this).attr("href");
+        var targetClass=$($(this).data("target"));
+        var buttonCover=$(this).parent();
+        targetClass.each(function(){
+            ("#"+$(this).attr("id")==target)?$(this).addClass("on"):$(this).removeClass("on");
+        });
+        buttonCover.siblings().removeClass("on");
+        buttonCover.addClass("on");
+        $("html,body").animate({scrollTop:$("main").offset().top-60},500);
+        e.preventDefault(event);
+    });
+});
 </script>
 </html>

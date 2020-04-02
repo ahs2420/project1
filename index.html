@@ -6,14 +6,17 @@
     <meta name="description" content="메인페이지">
     <meta name="keywords" content="클라우드펀딩,ㄴㄴㄴ">
 
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/common/favicon.png" type="image/x-icon">
     <meta name="og:title" content="와디지-메인"> 
     <meta name="og:description" content="클라우드펀딩">
-    <meta name="og:image" content="./images/share_logo.jpg">
+    <meta property="og:url" content="./index.html" />
+    <meta property="og:type" content="website" />
+    <meta name="og:image" content="https://www.krahs123.co.kr/images/common/favicon.png">
 
     <meta name="twitter:title" content="와디지-메인"> 
     <meta name="twitter:description" content="클라우드펀딩">
-    <meta name="twitter:image" content="./images/share_logo.jpg">
+    <meta name="twitter:image" content="./images/common/favicon.png">
+    <meta name="twitter:card" content="photo " />
 
     <title>와디지 메인</title>
     <link rel="stylesheet" href="./css/owl/owl.carousel.css">
@@ -36,29 +39,10 @@
     <header>
         <nav>
             <div class="flex-box flex-j-space flex-a-center container">
-                <!--모바일 좌측 메뉴+ 마이페이지 메뉴-->
+                <!--모바일 좌측 메뉴-->
                 <div class="dis-mobile flex-box">
                     <div class="search-btn-cover">
-                        <a href="#"><i class="fas fa-sign-in-alt"></i></a>
-                        <span class="position-rel">
-                            <button class="mypage-btn round-img-box bg-img icon-40" style="background-image: url(./images/profile-1.png);"></button>
-                            <div class="mypage-menu">
-                                <div class="mypage-profile">
-                                    <div class="round-img-box bg-img icon-50 m-0a" style="background-image: url(./images/profile-1.png);">
-                                    </div>
-                                    <p class="mt10">XXXX님</p>
-                                    <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
-                                </div>
-                                <div class="mypage-link">
-                                    <ul>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-gift"></i> 펀딩한프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-marker"></i> 제작한 프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-cog"></i> 설정</span><i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-power-off"></i> 로그아웃</span><i class="fas fa-chevron-right"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </span>
+                        <button type="button" data-target="nav-mobile-menu" onclick="toggleBtn(this);"><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
                 <!--모바일 좌측 메뉴+ 마이페이지 메뉴 끝-->
@@ -117,25 +101,7 @@
                         <button type="button" data-target="search-cover" onclick="activeAdd(this)"><i class="fas fa-search"></i></button>
                     </div>
                     <div class="login-cover pl20">
-                        <span class="position-rel">
-                            <button class="mypage-btn round-img-box bg-img  icon-40" style="background-image: url(./images/profile-1.png);"></button>
-                            <div class="mypage-menu">
-                                <div class="mypage-profile">
-                                    <div class="round-img-box bg-img icon-50 m-0a" style="background-image: url(./images/profile-1.png);">
-                                    </div>
-                                    <p class="mt10">XXXX님</p>
-                                    <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
-                                </div>
-                                <div class="mypage-link">
-                                    <ul>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-gift"></i> 펀딩한프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-marker"></i> 제작한 프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-cog"></i> 설정</span><i class="fas fa-chevron-right"></i></a></li>
-                                        <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-power-off"></i> 로그아웃</span><i class="fas fa-chevron-right"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </span>
+                        <button class="mypage-btn round-img-box bg-img  icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
                         <a class="hover-main" href="#">로그인</a>
                         <a class="pl10 hover-main" href="#">회원가입</a>
                     </div>
@@ -145,7 +111,8 @@
                 </div>
                 <div class="dis-mobile flex-box">
                     <div class="search-btn-cover">
-                        <button type="button" data-target="nav-mobile-menu" onclick="toggleBtn(this);"><i class="fas fa-bars"></i></button>
+                        <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+                        <button class="mypage-btn round-img-box bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
                     </div>
                 </div>
             </div>
@@ -217,6 +184,30 @@
                     </li>
                 </ul>
             </div>
+            <!--모바일 삼선메뉴 끝-->
+            <!--회원 마이페이지 - 우측메뉴-->
+            <div class="mypage-wrap">
+                <div class="mypage-close mypage-cover"></div>
+                <div class="mypage-menu">
+                    <button class="mypage-close mypage-close-btn"></button>
+                    <div class="mypage-profile">
+                        <div class="round-img-box bg-img icon-50 m-0a" style="background-image: url(./images/common/profile-1.png);">
+                        </div>
+                        <p class="mt10">XXXX님</p>
+                        <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
+                    </div>
+                    <div class="mypage-link">
+                        <ul>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-gift"></i> 펀딩한프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-marker"></i> 제작한 프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-cog"></i> 설정</span><i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-power-off"></i> 로그아웃</span><i class="fas fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--회원 마이페이지 - 우측메뉴 끝-->
         </nav>
         <!--슬라이드 이미지 1개일때는 .hero.item-only추가-->
         <div class="hero">
@@ -224,7 +215,7 @@
                 <div class="item">
                     <a href="#">
                         <div class="bg-hero-cover">
-                            <div class="bg-img bg-main" style="background-image: url(./images/main_1.jpg);"></div>
+                            <div class="bg-img bg-main" style="background-image: url(./images/main/main_1.jpg);"></div>
                             <div class="container bg-txt">
                                 <div class="small-title"></div>
                                 <h1 class="title mb20">잘 먹고 잘 쉬기<br>만원 혜택 받고 시작해요</h1>
@@ -236,7 +227,7 @@
                 <div class="item">
                     <a href="#">
                         <div class="bg-hero-cover">
-                            <div class="bg-img bg-main" style="background-image: url(./images/main_2.jpg);"></div>
+                            <div class="bg-img bg-main" style="background-image: url(./images/main/main_2.jpg);"></div>
                             <div class="container bg-txt">
                                 <div class="small-title"></div>
                                 <h1 class="title mb20">잘 먹고 잘 쉬기<br>만원 혜택 받고 시작해요</h1>
@@ -248,7 +239,7 @@
                 <div class="item">
                     <a href="#">
                         <div class="bg-hero-cover">
-                            <div class="bg-img bg-main" style="background-image: url(./images/main_3.jpg);"></div>
+                            <div class="bg-img bg-main" style="background-image: url(./images/main/main_3.jpg);"></div>
                             <div class="container bg-txt">
                                 <div class="small-title"></div>
                                 <h1 class="title mb20">잘 먹고 잘 쉬기<br>만원 혜택 받고 시작해요</h1>
@@ -280,7 +271,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -308,7 +299,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -336,7 +327,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -364,7 +355,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -392,7 +383,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -420,7 +411,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -448,7 +439,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -476,7 +467,7 @@
                         <a href="#">
                             <div class="border-box">
                                 <div class="img-box">
-                                    <img src="./images/item_1.jpg" alt="" />
+                                    <img src="./images/product/item_1.jpg" alt="" />
                                 </div>
                                 <div class="txt-box">
                                     <h3 class="title text-max-line line2 mb20">공기청정기+스마트화분, 필터와 식물로 듀얼청정! 자동물공급 까지?</h3>
@@ -511,7 +502,7 @@
         </section> -->
         <section class="reward-info">
             <div class="flex-box flex-wrap"  id="fadeInUp">
-                <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main-info-1.jpg);">
+                <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main/main-info-1.jpg);">
                     <div class="reward-info-text z-index-1">
                         <h1 class="title mb10">
                             와디즈 소개
@@ -524,7 +515,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main-info-2.jpg);">
+                <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main/main-info-2.jpg);">
                     <div class="reward-info-text z-index-1">
                         <h1 class="title mb10">
                             크라우드 펀딩이란
@@ -537,7 +528,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main-info-3.jpg);">
+                <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main/main-info-3.jpg);">
                     <div class="reward-info-text z-index-1">
                         <h1 class="title mb10">
                             펀딩 오픈하기
@@ -587,7 +578,7 @@
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora facere reprehenderit qui ut saepe quibusdam tempore vel aut sed molestias eius sapiente quisquam deleniti autem, cum provident ea totam iusto?
                                     </div>
                                 </div>
-                                <div class="bg-img col-lg-12 news-img" style="background-image:url(./images/main-news1.jpg)">
+                                <div class="bg-img col-lg-12 news-img" style="background-image:url(./images/main/main-news1.jpg)">
                                 </div>
                             </a>
                         </div>
@@ -622,7 +613,7 @@
                                         </div>
                                     </div>
                                     <div class="w-49p col-sm-12">
-                                        <div class="bg-img news-img" style="background-image:url(./images/main-news2.jpg)">
+                                        <div class="bg-img news-img" style="background-image:url(./images/main/main-news2.jpg)">
                                         </div>
                                     </div>
                                 </div>

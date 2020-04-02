@@ -62,6 +62,11 @@ nav{
     font-size: 1.25rem;
     font-weight: 500;
 }
+.stan-title{
+    font-family: 'Roboto','Nanum Gothic', sans-serif; 
+    font-size: 1.125rem;
+    font-weight: 500;
+}
 .tiny-title{
     font-family: 'Roboto','Nanum Gothic', sans-serif; 
     font-size: 0.875rem;
@@ -75,6 +80,9 @@ nav{
 }
 .large-content{
     font-size: 1.25rem;
+}
+.stan-content{
+    font-size: 1.125rem;
 }
 .small-content{
     font-size: 1rem;
@@ -150,6 +158,7 @@ nav{
 .mb40{margin-bottom: 40px;}
 .mb50{margin-bottom: 50px;}
 .mb100{margin-bottom: 100px;}
+.mt5{margin-top: 5px;}
 .mt10{margin-top: 10px;}
 .mt20{margin-top: 20px;}
 .mt30{margin-top: 30px;}
@@ -678,7 +687,7 @@ nav.active{
 }
 .nav-mobile-menu{
     height: calc(100vh - var(--var-nav-height));
-    background: #000;
+    background: rgba(0,0,0,0.9);
     color: #d6d6d6;
     text-align: left;
 }
@@ -786,12 +795,17 @@ nav.active{
     color: #666;
     border-color: #666;
 }
+.bg-sns:hover{
+    color: #fff;
+}
 .bg-facebook:hover{
     background-color: #3b5998;
     border: 1px solid transparent;
 }
-.bg-sns:hover{
-    color: #fff;
+.bg-kakaotalk:hover,.bg-kakaostory:hover{
+    background-color: #fae100;
+    border: 1px solid #f5f5f5;
+    color:#333;
 }
 .bg-instagram:hover{
     background:linear-gradient(225deg,#7024C4,#C21975,#C74C4D,#E09B3D);
@@ -815,20 +829,51 @@ nav.active{
     display: inline-block;
     vertical-align: middle;
 }
-.mypage-menu{
+
+.mypage-wrap{
     display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.3);
+}
+.mypage-wrap,.mypage-cover{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.mypage-wrap.active{
+    display: block;
+}
+
+.mypage-menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
     background-color: #fff;
-    border:1px solid #dadce0;
+    border-left:1px solid #dadce0;
     line-height: 1.5;
     max-width: 300px;
     z-index: 99;
     font-size: 0.875rem;
     font-weight: bold;
+    word-break: break-all;
 }
-.mypage-menu::after,.mypage-menu::before{
+.mypage-close-btn{
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/close-icon-white.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+}
+/* .mypage-menu::after,.mypage-menu::before{
     position: absolute;
     content: '';
     top: -10px;
@@ -846,25 +891,24 @@ nav.active{
 .mypage-menu::before{
     margin-top: -1.5px;
     border-bottom-color: #dadce0;
-}
-.mypage-btn.active+.mypage-menu{
-    display: block;
-    animation: fadeInDownMenu 0.3s ease;
+} */
+.mypage-wrap.active .mypage-menu{
+    animation: slideRight 0.3s ease;
 }
 .mypage-profile,.mypage-link{
     padding: 20px;
 }
 .mypage-profile{
     text-align: center;
-    color: #333;
+    background-color: var(--var-main-color);
+    color: rgba(255, 255, 255, 0.85);
 }
 .mypage-link{
-    background-color: var(--var-main-color);
-    color: #fff;
+    color:rgba(51, 51, 51, 0.9);
 }
 .mypage-link li{
     padding: 10px 0px;
-    border-bottom: 1px solid rgb(255, 255, 255,0.8);
+    border-bottom: 1px solid rgb(224, 224, 224,0.8);
 }
 .mypage-link li:last-child{
     padding-bottom:0px;
@@ -873,18 +917,26 @@ nav.active{
 .icon-30{
     width: 30px;
     height: 30px;
+    font-size: 1.25rem;
+    line-height: 30px;
 }
 .icon-40{
     width: 40px;
     height: 40px;
+    font-size: 1.5rem;
+    line-height: 40px;
 }
 .icon-50{
     width: 50px;
     height: 50px;
+    font-size: 1.5rem;
+    line-height: 50px;
 }
 .icon-100{
     width: 100px;
     height: 100px;
+    font-size: 2rem;
+    line-height: 100px;
 }
 .bar-indent{
     padding-left: 10px;
@@ -953,7 +1005,7 @@ nav.active{
         font-size: 1rem;
     }
     nav.active{
-        background-color: #000;
+        background-color: rgba(0,0,0,0.9);
         color: #d6d6d6;
         border-bottom:none;
     }
@@ -1089,17 +1141,6 @@ nav.active{
     }
     .search-btn{
         font-size: 0.875rem;
-    }
-    .mypage-btn.active+.mypage-menu{
-        animation: fadeInDown 0.3s ease;
-    }
-    .mypage-menu{
-        left: 0;
-        transform: translateX(0);    
-    }
-    .mypage-menu::after, .mypage-menu::before{
-        left: 15px;
-        transform: translateX(0);
     }
     .mobile-div,.mobile-div tr,.mobile-div td,.mobile-div th,.mobile-div tbody,.mobile-div thead{
         width: 100%;

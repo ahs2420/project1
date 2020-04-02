@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/mypage-one.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <script src="https://kit.fontawesome.com/8838b56230.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com./jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="position-fix">
+            <div class="head-con">
+                <div class="logo">
+                    <a href="#"><span class="main-color">W</span>a<span class="main-color">T</span>his</a>
+                </div>
+
+                <div class="head-userid">
+                    <div class="userlogo">
+                        <i class="fas fa-fan"></i>
+                    </div>
+
+                    <div class="username">
+                        WATHIS
+                    </div>
+                </div>
+
+                <div class="head-close">
+                    <button name="" id="" class="head-show">미리보기</button>
+                    <button name="" id="" class="head-out">나가기</button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="mypage-container" style="max-width: 100%;">
+            <div class="menu-box">
+                <div class="box1-menu">
+
+                    <div class="reward-box-btn">
+
+                        <button class="box-btn1" type="button" id="reward">리워드</button>
+                        <button class="box-btn2" type="button" id="reward">펀딩 준비 작성 중</button>
+                    </div>
+
+                    <div class="reward-box">
+                        <h2> 123의 멋진 프로젝트</h2>
+                    </div>
+
+                    <ul class="jq-box">
+                        <li class="mypage-li-menu">
+                            <div class="reward-box-num">
+                                <a href="#">프로젝트 번호<i class="fas fa-angle-down"></i></a>
+
+                                <ul class="hide">
+                                    <li>
+                                        와디지 담당자와의 소통은 프로젝트 번호로 진행됩니다. 상세페이지는 프로젝트 번호를 포함한 URL 주소로 오픈 된 후 진입 가능합니다.
+                                    </li>
+                                    <li class="reward-box-url">
+                                        url 복사하기
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <ul class="menu-text" style="list-style: none;">
+                    <li class="mypage-li-menu">
+                        <div class="menu-text1">
+                            <a href="#">펀딩 준비<i class="fas fa-angle-down"></i></a>
+                            <ul class="hide">
+                                <li><a href="#">기본 요건 및 정보</a></li>
+                                <li><a href="#">스토리 작성</a></li>
+                                <li><a href="#">리워드 설계</a></li>
+                                <li><a href="#">위험요인 및 정책</a></li>
+                                <li><a href="#">메이커 정보</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mypage-li-menu">
+                        <div class="menu-text1">
+                            <a href="#">오픈예정 현황<i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </li>
+                    <li class="mypage-li-menu">
+                        <div class="menu-text1">
+                            <a href="#">결제 현황<i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </li>
+                    <li class="mypage-li-menu">
+                        <div class="menu-text1">
+                            <a href="#">새소식<i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </li>
+                    <li class="mypage-li-menu">
+                        <div class="menu-text1">
+                            <a href="#">서포터<i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </li>
+                    <li class="mypage-li-menu">
+                        <div class="menu-text1">
+                            <a href="#">자료및 도움말<i class="fas fa-angle-down"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="box2-funReady">
+                <!-- 기본 정보 박스 -->
+                <div class="flex-basic-box">
+                    <div class="basic-box">
+                        <div class="basic-head">
+                            <span class="ba-head1">펀딩 준비</span>
+                            <span class="ba-head2"><i class="fas fa-chevron-right"></i></span>
+                            <span class="ba-head3">기본 정보</span>
+                        </div>
+                        <div class="basic-box-one">
+                            <h1>기본 정보</h1>
+                            <p>프로젝트를 대표할 주요 기본 정보를 입력하세요.</p>
+                        </div>
+                        <div class="ba-project">
+                            <div class="ba-pro-name">
+                                <label for="projectname" class="">프로젝트 제목</label>
+                                <input type="text" id="projectname" placeholder="제목 입력">
+                                <p>40자 남음</p>
+                            </div>
+                            <div class="ba-pro-price">
+                                <label for="projectprice" class="">목표금액</label>
+                                <p>최소 50 만원 ~ 최대 1억 원으로 설정하세요. </p>
+                                <input type="text" id="projectprice" placeholder="목표 금액 입력">원
+                            </div>
+                            <label for="projectimg" class="">대표 이미지</label>
+                            <input type="file" id="projectimg" placeholder="등록하기">
+                            <p>3MB 이하의 JPEG,PNG 파일</p>
+                            <p>사이즈: 1200 X 675 픽셀이상</p>
+                            <p>텍스트 및 로고 삽입 금지</p>
+                            
+                            <div class="ba-pro-name">
+                                <label for="projectname" class="">카테고리 선택</label>
+                                <input type="text" id="projectname" placeholder="카테고리 선택">
+                            </div>
+                            <div class="ba-pro-name">
+                                <label for="projectname" class="">프로젝트 종료일</label>
+                                <p>리워드를 설계하기 위해 프로젝트 종료일을 선택하세요.</p>
+                                <input type="text" id="projectname" placeholder="예? 20200401">
+                            </div>
+                            <div class="ba-pro-name">
+                                <h3>성인인증</h3>
+                                <span>(선택사항)</span>
+                                <input type="radio" id="projectname">19세 이상 펀딩 가능한 리워드입니다.
+                            </div>
+                            <div class="ba-pro-name">
+                                <label for="projectname" class="">프로젝트 제목</label>
+                                <p>엔터를 누르면 태그가 등록 됩니다.<span>(최대 10개까지 입력가능</span></p>
+
+                                <input type="text" id="projectname" placeholder="태그 입력">
+                            </div>
+                            <div class="tag">
+                                0/10개의 태그
+                            </div>
+                        
+                            <div class="btn-save">
+                                <button type="button">저장하기</button>
+                            </div>
+                        
+                        <!-- 기본 요건 -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <div class="ba-adver-box">
+                        <div class="ba-adver">
+                            dsada
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+
+    <footer></footer>
+</body>
+
+
+
+
+<script>
+    $(function () {
+
+        $(".mypage-li-menu").click(function () {
+
+            $(this).find(".hide").toggle();
+            $(this).toggleClass("active");
+
+        });
+
+    });
+
+
+
+    $(function () {
+        $("#my-modal").click(function () {
+            $(".my-modal").addClass("active");
+        });
+
+    });
+
+    $(function () {
+        $(".my-modal-close").click(function () {
+            $(".my-modal").removeClass("active")
+
+        });
+
+    });
+</script>
+
+</html>

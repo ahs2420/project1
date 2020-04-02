@@ -1,0 +1,371 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 큰 박스 부분 */
+
+.head-con {
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 24px;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+}
+
+.mypage-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .menu-box {
+    flex-basis: 15%;
+    background-color: firebrick;
+} */
+
+.box2-funReady {
+    width: 100%;
+    /* background-color: forestgreen; */
+    padding: 40px 66px;
+    overflow-y: scroll;
+    height: calc(100vh - 56px);
+}
+
+
+/* header 부분 */
+.head-con .logo {
+    flex-basis: 20%;
+    /* background-color: turquoise; */
+    text-align: center;
+}
+
+
+
+.head-userid {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+.userlogo {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: teal;
+    color: #fff;
+    vertical-align: baseline;
+}
+.userlogo i{
+    font-size: 18px;
+    color: #fff;
+
+}
+.username {
+    margin-left: 10px;
+}
+
+.head-close {
+    flex-basis: 30%;
+    display: flex;
+    /* background-color: teal; */
+    justify-content: flex-end;
+    align-items: center;
+    display: flex-end;
+}
+
+.head-show {
+    width: 100px;
+    height: 35px;
+    list-style: 35px;
+    padding: 0 16px;
+
+    border: none;
+    border: 2px solid #6ac5b8;
+    border-collapse: collapse;
+    border-radius: 50px;
+
+    color: #6ac5b8;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.head-show:hover {
+    color: #fff;
+    background-color: #6ac5b8;
+}
+
+.head-out {
+    width: 75px;
+    height: 35px;
+    list-style: 35px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #6ac5b8;
+
+    border: 2px solid #6ac5b8;
+    border-radius: 50px;
+    border: none;
+    border-collapse: collapse;
+
+    background-color: transparent;
+}
+
+/* 리워드 메뉴 부분 */
+/* .menu-box {
+    background-color: khaki;
+
+} */
+/* 프로젝트 화살 바꾸는 부분 */
+.mypage-li-menu .fa-angle-down{
+    transition: 0.3s;
+}
+.mypage-li-menu.active .fa-angle-down{
+    transform: rotate(-180deg);
+}
+
+.box1-menu {
+    width: 280px;
+    height: auto;
+    padding: 24px 24px;
+    background: linear-gradient( #8fcebb, #85cfd3);
+    /* overflow: hidden; */
+}
+
+
+
+.reward-box-btn {
+    /* background-color: tomato; */
+
+    margin-bottom: 10px;
+}
+
+
+
+.box-btn1 {
+    width: 50px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.box-btn2 {
+    width: 100px;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    background-color: transparent;
+    margin-left: 4px;
+    outline: none;
+}
+
+.reward-box h2 {
+
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+/* .reward-hide{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    display: none;
+} */
+.jq-box {
+    /* background-color: tomato; */
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+.jq-box ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.reward-box-num ul {
+    display: none;
+}
+
+.reward-box-num {
+    margin-bottom: 10px;
+    
+}
+
+.reward-box-num a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.reward-box-num i {
+    color: #fff;
+    list-style: none;
+    margin-left: 129px;
+    font-size: 20px;
+    
+    
+}
+
+.reward-box p {
+    font-size: 13px;
+    color: #fff;
+    
+}
+
+.reward-box-url {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    
+}
+
+.menu-text1 {
+    padding: 16px 24px;
+    position: relative;
+    /* background-color: lawngreen; */
+    
+}
+
+.menu-text1 a {
+    text-decoration: none;
+    /* background-color: lightcoral; */
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.menu-text1 i {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 20px;
+
+}
+
+.menu-text1 ul {
+    /* padding-left: 44px; */
+    display: none;
+    background-color: rgba(235, 235, 235, 0.15);
+
+}
+
+.menu-text1 ul li {
+    list-style: none;
+    padding: 16px 24px;
+}
+
+.menu-text2 {
+    font-size: 13px;
+    position: relative;
+    padding: 16px 24px;
+
+}
+
+.menu-text2 a {
+    text-decoration: none;
+    /* background-color: lightcoral; */
+    font-size: 13px;
+    font-weight: 700;
+    color: #000;
+}
+
+.menu-text2 i {
+
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: rgba(0, 0, 0, .8);
+    font-size: 20px;
+}
+
+/* 기본 정보 박스 -> flex-basic-box */
+.flex-basic-box{
+display: flex;
+}
+
+.basic-box{
+background-color: royalblue;
+flex-basis: 60%;
+}
+
+
+.basic-head{
+    font-size: 13px;
+    margin-bottom: 20px;
+    /* background-color: royalblue; */
+}
+.ba-head1{
+    color: #90949c;
+    font-weight: 600;
+    /* background-color: burlywood; */
+}
+.basic-head i{
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.basic-box-one h1{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+.basic-box-one p{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* 광고 박스 */
+.ba-adver-box{
+background-color: rosybrown;
+flex-basis: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 리워드 광고 부분*/
+

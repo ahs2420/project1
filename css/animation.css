@@ -33,6 +33,14 @@
 .icon-rotate i{
     transform: rotate(-180deg);
 }
+@keyframes slideRight{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
 @keyframes fadeInUp{
     from{
         transform: translateY(20px);

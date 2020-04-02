@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -12,115 +12,7 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-        .my-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
 
-        .my-modal-cover {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-        }
-
-
-
-        .my-modal.active {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* background-color: salmon; */
-        }
-
-        .my-modal-container {
-            margin: 0 auto;
-            max-width: 365px;
-            width: 100%;
-            /* height: 670px; */
-            padding:30px;
-            background-color: #fff;
-            border-radius: 5px;
-            z-index: 1;
-
-            overflow: hidden;
-            position: relative;
-
-
-        }
-
-        .my-modal-close {
-            font-size: 30px;
-            color: rgba(0, 0, 0, 0.6);
-            text-align: left;
-            margin-bottom: 5px;
-        }
-
-        .my-modal-close i {
-            font-size: 25px;
-            cursor: pointer;
-
-        }
-
-        .my-modal-content {
-            overflow-y: auto;
-            margin-top: 10px;
-            padding-left: 30px;
-        }
-
-        .my-be {
-            width: 100%;
-            height: 100%;
-            list-style: none;
-            display: inline-block;
-
-        }
-
-        .my-be li::before {
-            content: '';
-            width: 15px;
-            height: 15px;
-            border-radius: 50px;
-            background-color: #00c4c4;
-            margin-right: 10px;
-            position: absolute;
-            top: 8px;
-            left: -30px;
-            z-index: 3;
-        }
-
-        .my-be li::after{
-            content: '';
-            width: 5px;
-            height: 109px;
-            background-color:rgba(141, 137, 137, 0.466);
-            position: absolute;
-            top: 8px;
-            left: -25px;
-        
-        }
-        .my-be li:nth-child(4)::after{
-            content: none;
-            
-        }
-        
-        .my-text h2 {
-            font-size: 19px;
-            margin-bottom: 6px;
-        }
-
-        .my-text p {
-            font-size: 15px;
-            padding-bottom: 15px;
-
-        }
     </style>
 
 
@@ -170,7 +62,7 @@
                     </div>
 
                     <ul class="jq-box">
-                        <li class="mypage-menu">
+                        <li class="mypage-li-menu">
                             <div class="reward-box-num">
                                 <a href="#">프로젝트 번호<i class="fas fa-angle-down"></i></a>
 
@@ -188,7 +80,7 @@
 
                 </div>
                 <ul class="menu-text" style="list-style: none;">
-                    <li class="mypage-menu">
+                    <li class="mypage-li-menu">
                         <div class="menu-text1">
                             <a href="#">펀딩 준비<i class="fas fa-angle-down"></i></a>
                             <ul class="hide">
@@ -200,27 +92,27 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="mypage-menu">
+                    <li class="mypage-li-menu">
                         <div class="menu-text1">
                             <a href="#">오픈예정 현황<i class="fas fa-angle-down"></i></a>
                         </div>
                     </li>
-                    <li class="mypage-menu">
+                    <li class="mypage-li-menu">
                         <div class="menu-text1">
                             <a href="#">결제 현황<i class="fas fa-angle-down"></i></a>
                         </div>
                     </li>
-                    <li class="mypage-menu">
+                    <li class="mypage-li-menu">
                         <div class="menu-text1">
                             <a href="#">새소식<i class="fas fa-angle-down"></i></a>
                         </div>
                     </li>
-                    <li class="mypage-menu">
+                    <li class="mypage-li-menu">
                         <div class="menu-text1">
                             <a href="#">서포터<i class="fas fa-angle-down"></i></a>
                         </div>
                     </li>
-                    <li class="mypage-menu">
+                    <li class="mypage-li-menu">
                         <div class="menu-text1">
                             <a href="#">자료및 도움말<i class="fas fa-angle-down"></i></a>
                         </div>
@@ -246,86 +138,87 @@
 
             </div>
             <div class="box2-funReady">
-
-                <div class="fun-wrap">
-                    <div class="fun-ready1">
-                        <h1>펀딩 준비</h1>
-                        <div class="fun-ready1-text">
-                            <a>본격적으로 펀딩을 오픈하기 위해 프로젝트에 대한 6가지 메뉴의 필수항목을 작성하세요.</a>
+                <div class="box1-box2">
+                    <div class="fun-wrap">
+                        <div class="fun-ready1">
+                            <h1>펀딩 준비</h1>
+                            <div class="fun-ready1-text">
+                                <a>본격적으로 펀딩을 오픈하기 위해 프로젝트에 대한 6가지 메뉴의 필수항목을 작성하세요.</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="fun-ready2">
-                    <div class="ready-state">
-                        <div class="ready-wrap">
-                            <div class="ready-state-left">
-                                <div class="ready-project">프로젝트 준비 상태</div>
-                                <div class="ready-right">
-                                    <a href="#" id="my-modal">지금 나의 단계는?</a>
+                    <div class="fun-ready2">
+                        <div class="ready-state">
+                            <div class="ready-wrap">
+                                <div class="ready-state-left">
+                                    <div class="ready-project">프로젝트 준비 상태</div>
+                                    <div class="ready-right">
+                                        <a href="#" id="my-modal">지금 나의 단계는?</a>
+                                    </div>
+                                </div>
+                                <div class="ready-pro-text">
+                                    <h4>펀딩 준비 작성 중</h4>
+                                    <div class="fun-text">
+                                        <p>필수 항목을 모두 작성 후 저장하기 버튼을 클릭해주세요. 작성중 > 작성 완료 상태로 변경되어야 최종 제출이 가능합니다.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="ready-pro-text">
-                                <h4>펀딩 준비 작성 중</h4>
-                                <div class="fun-text">
-                                    <p>필수 항목을 모두 작성 후 저장하기 버튼을 클릭해주세요. 작성중 > 작성 완료 상태로 변경되어야 최종 제출이 가능합니다.</p>
+                            <div class="fun-ready">
+                                <div class="readybox-basic">
+                                    <h2>기본요건 및 정보</h2>
+                                    <span>작성 중</span>
+                                </div>
+                                <button class="ready-btn">작성하기</button>
+                            </div>
+
+                            <div class="fun-ready">
+                                <div class="readybox-basic">
+                                    <h2>스토리 작성</h2>
+                                    <span>작성 중</span>
+                                </div>
+                                <button class="ready-btn">작성하기</button>
+                            </div>
+                            <div class="fun-ready">
+                                <div class="readybox-basic">
+                                    <h2>리워드 설계</h2>
+                                    <span>작성 중</span>
+                                </div>
+                                <button class="ready-btn">작성하기</button>
+                            </div>
+                            <div class="fun-ready">
+                                <div class="readybox-basic">
+                                    <h2>위험요인 및 정책</h2>
+                                    <span>작성 중</span>
+                                </div>
+                                <button class="ready-btn">작성하기</button>
+                            </div>
+                            <div class="fun-ready">
+                                <div class="readybox-basic">
+                                    <h2>메이커 정보</h2>
+                                    <span>작성 중</span>
+                                </div>
+                                <button class="ready-btn">작성하기</button>
+                            </div>
+
+                            <div class="readybox-basic-end">
+                                <button class="ready-btn">제출하기</button>
+
+                            </div>
+
+                            <!-- <div class="fun-ready-bu">제출하기 버튼</div> -->
+                        </div>
+                        <div class="adver-boxwrap">
+                            <div class="adver-box1">
+                                <img src="images/san.jpg" alt="">
+                                <div class="box1-center">
+                                    <span class="readver">리워드펀딩을 준비하는 메이커님을 위한</span><br>
+                                    <a href="#">필수 가이드-></a>
+                                    <div class="box-black"></div>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="fun-ready">
-                            <div class="readybox-basic">
-                                <h2>기본요건 및 정보</h2>
-                                <a>작성 중</a>
-                            </div>
-                            <button class="ready-btn">작성하기</button>
-                        </div>
-
-                        <div class="fun-ready">
-                            <div class="readybox-basic">
-                                <h2>스토리 작성</h2>
-                                <a>작성 중</a>
-                            </div>
-                            <button class="ready-btn">작성하기</button>
-                        </div>
-                        <div class="fun-ready">
-                            <div class="readybox-basic">
-                                <h2>리워드 설계</h2>
-                                <a>작성 중</a>
-                            </div>
-                            <button class="ready-btn">작성하기</button>
-                        </div>
-                        <div class="fun-ready">
-                            <div class="readybox-basic">
-                                <h2>위험요인 및 정책</h2>
-                                <a>작성 중</a>
-                            </div>
-                            <button class="ready-btn">작성하기</button>
-                        </div>
-                        <div class="fun-ready">
-                            <div class="readybox-basic">
-                                <h2>메이커 정보</h2>
-                                <a>작성 중</a>
-                            </div>
-                            <button class="ready-btn">작성하기</button>
-                        </div>
-
-                        <div class="readybox-basic-end">
-                            <button class="ready-btn">제출하기</button>
 
                         </div>
-
-                        <!-- <div class="fun-ready-bu">제출하기 버튼</div> -->
-                    </div>
-                    <div class="adver-boxwrap">
-                        <div class="adver-box1">
-                            <img src="images/san.jpg" alt="">
-                            <div class="box1-center">
-                                <span class="readver">리워드펀딩을 준비하는 메이커님을 위한</span><br>
-                                <a href="#">필수 가이드-></a>
-                                <div class="box-black"></div>
-
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -341,7 +234,7 @@
         </div>
 
         <div class="my-modal">
-            <div class="my-modal-close my-modal-cover "></div>
+            <div class=" my-modal-cover "></div>
             <div class="my-modal-container">
 
                 <div class="my-modal-close">
@@ -361,21 +254,21 @@
                             </div>
 
                         </li>
-                      
+
                         <li style="position: relative">
                             <div class="my-text">
                                 <h2>요건 확인</h2>
                                 <p>펀딩 진행을 위한 기본 요건을 충족하는지, 누락된 사항은 없는 지 등을 확인 하는 단계입니다.</p>
                             </div>
                         </li>
-                      
+
                         <li style="position: relative">
                             <div class="my-text">
                                 <h2>콘텐츠 확인</h2>
                                 <p>펀딩 컨텐츠에 대한 검토 및 약점을 체결하는 단계입니다.</p>
                             </div>
                         </li>
-                      
+
                         <li style="position: relative">
                             <div class="my-text">
                                 <h2>펀딩 오픈</h2>
@@ -405,7 +298,7 @@
 <script>
     $(function () {
 
-        $(".mypage-menu").click(function () {
+        $(".mypage-li-menu").click(function () {
 
             $(this).find(".hide").toggle();
             $(this).toggleClass("active");

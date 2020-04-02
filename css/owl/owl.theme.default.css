@@ -62,6 +62,7 @@
       .owl_hero_dots{
         max-width: 300px;
         width: 50%; 
+        display: flex;
       }
       .owl_hero_cotainer .owl-prev,
       .owl_hero_cotainer .owl-next
@@ -76,21 +77,7 @@
       .owl_hero_nav > [class*=owl-]:hover{
         background-color: rgba(0, 0, 0, 0.5);
       }
-      .owl_hero_dots .owl-dot:only-child { width: 100%; }                          
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(2),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(2)+.owl-dot { width: 50%; }
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(3),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(3)~.owl-dot { width: 33.33%; }
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(4),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(4)~.owl-dot { width: 25%; }
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(5),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(5)~.owl-dot { width: 20%; }
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(6),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(6)~.owl-dot { width: 16.6666%; }
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(7),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(7)~.owl-dot { width: 14.2857%; }
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(8),                       
-      .owl_hero_dots .owl-dot:first-child:nth-last-child(8)~.owl-dot { width: 12.5%; }
+      .owl_hero_dots .owl-dot{flex-basis: 100%;}
       .owl_hero_dots .owl-dot{
         vertical-align: bottom;
         height: 3px;

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="상품페이지">
+    <meta name="keywords" content="클라우드펀딩,ㄴㄴㄴ">
+
+    <link rel="shortcut icon" href="./images/common/favicon.png" type="image/x-icon">
+    <meta name="og:title" content="와디지-상품"> 
+    <meta property="og:url" content="./product.html" />
+    <meta name="og:description" content="[마지막앵콜] 다리에도 베개가 필요해요">
+    <meta property="og:type" content="website" />
+    <meta name="og:image" content="https://www.krahs123.co.kr/images/main/main_1.jpg">
+
+    <meta name="twitter:title" content="와디지-상품"> 
+    <meta name="twitter:description" content="[마지막앵콜] 다리에도 베개가 필요해요">
+    <meta name="twitter:image" content="./images/main/main_1.jpg">
+    <meta name="twitter:card" content="photo " />
+
+    <title>와디지 상품</title>
+    <link rel="stylesheet" href="./css/owl/owl.carousel.css">
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product-buy.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://kit.fontawesome.com/5cf91d4eb4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="./js/owl/owl.carousel.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/product-buy.js"></script>
+    <script src="./js/snsShare.js"></script>
+    <style>
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex-box flex-j-space flex-a-center container">
+                <!--모바일 좌측 메뉴-->
+                <div class="dis-mobile flex-box">
+                    <div class="search-btn-cover">
+                        <button type="button" data-target="nav-mobile-menu" onclick="toggleBtn(this);"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+                <!--모바일 좌측 메뉴+ 마이페이지 메뉴 끝-->
+                <!--pc좌측, 모바일 중앙메뉴-->
+                <div class="nav-left flex-box flex-j-space">
+                    <div class="logo">
+                        <a href="./index.html"><span class="main-color">W</span>a<span class="main-color">T</span>his</a>
+                    </div>
+                    <div class="menu dis-pc">
+                        <ul class="gnb-menu flex-box position-rel">
+                            <li>
+                                <a class="hover-underline" href="./product.html">리워드</a>
+                                <!-- <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a class="hover-underline" href="#">메뉴2</a>
+                                <!-- <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a class="hover-underline" href="#">메뉴3</a>
+                                <!-- <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a class="hover-underline" href="#">메뉴4</a>
+                                <!-- <ul class="sub-menu">
+                                    <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                                    <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                                </ul> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-right flex-box dis-pc">
+                    <div class="search-btn-cover">
+                        <button type="button" data-target="search-cover" onclick="activeAdd(this)"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="login-cover pl20">
+                        <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
+                        <a class="hover-main" href="#">로그인</a>
+                        <a class="pl10 hover-main" href="#">회원가입</a>
+                    </div>
+                    <div class="alerm-cover pl20">
+                        <a class="btn-stan btn-alerm laptop-dis-none" href="#">펀딩오픈 신청하기</a>
+                    </div>
+                </div>
+                <div class="dis-mobile flex-box">
+                    <div class="search-btn-cover">
+                        <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+                        <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="search-cover dis-pc">
+                <div class="container">
+                    <form action="" method="GET" name="nav-search">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                        <input type="text" class="search-bar input-stan" placeholder="어떤 프로젝트를 찾고 계신가요?">
+                        <button type="button" class="search-btn close right" data-target="search-cover" onclick="activeRemove(this)"><i class="fas fa-times"></i></button>
+                    </form>
+                </div>
+            </div>
+            <!--모바일 삼선 메뉴-->
+            <div class="nav-mobile-menu">
+                <ul class="gnb-mobile-menu">
+                    <li>
+                        <div class="search-cover dis-pc">
+                            <div class="container">
+                                <form action="" method="GET" name="nav-search">
+                                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                                    <input type="text" class="search-bar input-stan" placeholder="어떤 프로젝트를 찾고 계신가요?">
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="flex-box flex-j-center">
+                        <a class="hover-main" href="#">로그인</a>
+                        <a class="pl10 hover-main" href="#">회원가입</a>
+                    </li>
+                    <li class="mobile-menu">
+                        <button href="#">메뉴1</button>
+                        <ul class="sub-menu dis-none">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-menu">
+                        <button href="#">메뉴2</button>
+                        <!-- <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="mobile-menu">
+                        <button href="#">메뉴3</button>
+                        <!-- <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="mobile-menu">
+                        <button href="#">메뉴4</button>
+                        <!-- <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+            <!--모바일 삼선메뉴 끝-->
+            <!--회원 마이페이지 - 우측메뉴-->
+            <div class="mypage-wrap">
+                <div class="mypage-close mypage-cover"></div>
+                <div class="mypage-menu">
+                    <button class="mypage-close mypage-close-btn"></button>
+                    <div class="mypage-profile">
+                        <div class="icon-round bg-img icon-50 m-0a" style="background-image: url(./images/common/profile-1.png);">
+                        </div>
+                        <p class="mt10">XXXX님</p>
+                        <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
+                    </div>
+                    <div class="mypage-link">
+                        <ul>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-gift"></i> 펀딩한프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-marker"></i> 제작한 프로젝트</span><i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-cog"></i> 설정</span><i class="fas fa-chevron-right"></i></a></li>
+                            <li><a class="flex-box w-100p flex-j-space align-center" href="#"><span><i class="fas fa-power-off"></i> 로그아웃</span><i class="fas fa-chevron-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--회원 마이페이지 - 우측메뉴 끝-->
+        </nav>
+        <!--슬라이드 이미지 1개일때는 .hero.item-only추가-->
+        <div class="hero">
+            <div class="owl-carousel owl-hero owl-theme">
+                <div class="item">
+                    <a href="#">
+                        <div class="bg-hero-cover">
+                            <div class="bg-img bg-main" style="background-image: url(./images/main/main_1.jpg);"></div>
+                            <div class="container bg-txt">
+                                <div class="small-title">홈리빙</div>
+                                <h1 class="title mb20">[마지막앵콜] 다리에도 베개가 필요해요 | 지친 내다리를 위한, 부끼싹!</h1>
+                                <div class="sub-title"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--슬라이더 버튼-->
+            <div class="owl_hero_cotainer container flex-box flex-j-space flex-a-flexend">
+                <div class="owl_hero_dots owl-dots"></div>
+                <div class="owl_hero_nav owl-dots"></div>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="term-box">
+            <div class="container">
+                <a href="#">회원가입약관</a>
+                <a href="#">서비스이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">운영정책</a>
+                <a href="#">제휴문의</a>
+                <a href="#">공지사항</a>
+                <a href="#">인제채용</a>
+                <a href="#">SNS</a>
+            </div>
+        </div>
+        <div class="footer-box"> 
+            <div class="container flex-box flex-j-space flex-a-center flex-wrap">
+                <div class="footer-item pt30 pb30">
+                    <p>와디즈 대표 고객센터</p>
+                    <div>
+                        1661-9056
+                        <span class="gray ml5">
+                        | 카카오 채널@와디즈
+                        </span>
+                        <span class="gray ml5">
+                        | info@wadiz.kr
+                        </span>
+                        <span class="gray ml5">
+                        | 멤버십 고객센터 1811-9090
+                        </span>
+                    </div>
+                </div>
+                <div class="footer-item pt30 pb30">
+                    <p class="gray">와디즈 플랫폼(주) | 대표이사 최동철 | 사업자등록번호 220-88-37661 | 경기도 성남시 분당구 판교로 242 (삼평동) 판교 디지털 센터 A동 4층 402호</p>
+                    <p>ⓒWADIZ Platform Co., Ltd</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

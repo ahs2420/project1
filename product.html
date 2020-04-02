@@ -104,7 +104,7 @@
                         <button type="button" data-target="search-cover" onclick="activeAdd(this)"><i class="fas fa-search"></i></button>
                     </div>
                     <div class="login-cover pl20">
-                        <button class="mypage-btn round-img-box bg-img  icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
+                        <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
                         <a class="hover-main" href="#">로그인</a>
                         <a class="pl10 hover-main" href="#">회원가입</a>
                     </div>
@@ -115,7 +115,7 @@
                 <div class="dis-mobile flex-box">
                     <div class="search-btn-cover">
                         <a href="#"><i class="fas fa-sign-in-alt"></i></a>
-                        <button class="mypage-btn round-img-box bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
+                        <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                 <div class="mypage-menu">
                     <button class="mypage-close mypage-close-btn"></button>
                     <div class="mypage-profile">
-                        <div class="round-img-box bg-img icon-50 m-0a" style="background-image: url(./images/common/profile-1.png);">
+                        <div class="icon-round bg-img icon-50 m-0a" style="background-image: url(./images/common/profile-1.png);">
                         </div>
                         <p class="mt10">XXXX님</p>
                         <p class="mt5">XXXXXXXXXXXXXXXXX@naver.com</p>
@@ -275,7 +275,7 @@
                         <p>100% 이상 모이면 펀딩이 성공되는 프로젝트</p>
                         <p>이 프로젝트는 펀딩 마감일까지 목표 금액이 100% 모이지 않으면 결제가 진행되지 않습니다.</p>
                     </div>
-                    <div class="sub-title bold mb20"> 
+                    <div class="sub-title bold mb20 border-bottom"> 
                         프로젝트 스토리
                     </div>
                     <div class="product-story">
@@ -444,11 +444,11 @@
                 <!--커뮤니티-->
                 <article class="product-items product-community" id="product-community">
                     <div class="stan-title mb30">
-                        <p class="mb10">서포터님!</p>
+                        <p class="title bold mb10 main-color">서포터님!</p>
                         <p>처음 <span class="bold">메이커의 열정과 가치에 공감</span>해주셨듯, 마지막까지 <span class="bold">메이커를 응원</span>해주세요.</p>
                     </div>
                     <p class="mb5 tiny-content">와디즈에서 펀딩하는 방법이 궁금하다면?</p>
-                    <p class="mb30 large-title bold">FAQ</p>
+                    <p class="large-title bold">FAQ</p>
                     <div class="product-faq-items">
                         <div class="product-faq-item pt20 border-bottom">
                             <button class="w-100p" data-target=".product-faq-content7" onclick="slideToggle(this)">
@@ -534,20 +534,92 @@
                             </div>
                         </div>
                         <div class="product-faq-item pt20 border-bottom">
-                            <div>
+                            <div class="mb20">
                                 <p class="sub-title bold">여러분의 한마디가 진행자에게 큰 힘이 됩니다</p>
                                 <p class="large-title bold main-color">댓글 작성시 유의사항</p>
                                 <p class="bar-indent tiny-content">프로젝트와 관계없는 글, 광고성, 욕설, 비방, 도배 등의 글은 내부 검토 후 삭제됩니다.</p>
                                 <p class="bar-indent tiny-content">리워드 관련 문의 및 배송문의는 프로젝트 진행자에게 문의하시면 정확한 답변을 받을 수 있습니다.</p>
                             </div>
-                            <form class="product-comment" name="comment" action="" method="POST" onsubmit="return false;">
-                                <textarea>
-
-                                </textarea>
-                                <button type="submit">
-                                    댓글달기
-                                </button>
+                            <form class="comment-form" name="comment" action="" method="POST" onsubmit="return false;">
+                                <textarea class="mb5"></textarea>
+                                <div class="btn-wrap mb20">
+                                    <button class="btn-stan btn-main" type="submit">
+                                        댓글달기
+                                    </button>
+                                </div>
                             </form>
+                        </div>
+                        <div class="product-faq-item pt20 border-bottom">
+                            <div class="comment-wrap">
+                                <div class="comment-items mb20">
+                                    <div class="comment-item-wrap mb20">
+                                        <div class="comment-item gray-round-box pt20 pb20 pl5p pr5p mb5">
+                                            <div class="comment-profile flex-box flex-a-center mb10">
+                                                <div class="img-box"> 
+                                                    <img class="icon-50 icon-round" src="./images/common/profile-1.png">
+                                                </div>
+                                                <div class="comment-profile-txt ml20">
+                                                    <p class="bold">안태민</p>
+                                                    <p class="tiny-content"><span class="main-color">펀딩참여자</span><span class="gray"> | 20.04.02</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>"사전 공개 참여 후 펀딩까지 한 고객을 대상으로"라는 표현은 알림신청을 하고 펀딩까지 한 고객을 의미하는 것인가요?! ^^</p>
+                                            </div>
+                                        </div>
+                                        <div class="comment-recomment-form-wrap">
+                                            <div class="txt-right">
+                                                <button data-target="#comment-100" class="comment-btn main-color toggle-target" >답글달기</button>
+                                            </div>
+                                            <form class="comment-form dis-none mt10" id="comment-100" name="comment" action="" method="POST" onsubmit="return false;">
+                                                <textarea class="mb5"></textarea>
+                                                <div class="btn-wrap mb20">
+                                                    <button class="btn-stan btn-main" type="submit">
+                                                        답글달기
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="comment-item-wrap mb20">
+                                        <div class="comment-recomment-item gray-round-box pt20 pb20 pl5p pr5p">
+                                            <div class="comment-profile flex-box flex-a-center mb10">
+                                                <div class="img-box"> 
+                                                    <img class="icon-50 icon-round" src="./images/product/maker-img.jpg">
+                                                </div>
+                                                <div class="comment-profile-txt ml20">
+                                                    <p class="bold">앵커코리아</p>
+                                                    <p class="tiny-content"><span class="bg-main-alpha-color white-alpha pl5 pr5">진행자</span><span class="gray"> | 20.04.02</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>안녕하세요 서포터님,</p>
+                                                <p>프로젝트가 종료되고 일정대로 리워드를 수령하신 후 노매틱 코리아 홈페이지에 회원 가입을 하시고 1:1문의란을 통해 펀딩 증빙과 함께 요청글을 남겨주시면 적립해드리겠습니다.</p>
+                                                <p>감사합니다!</p>
+                                                <p>-노매틱코리아-</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="comment-item-wrap mb20">
+                                        <div class="comment-recomment-item gray-round-box pt20 pb20 pl5p pr5p">
+                                            <div class="comment-profile flex-box flex-a-center mb10">
+                                                <div class="img-box"> 
+                                                    <img class="icon-50 icon-round" src="./images/common/profile-1.png">
+                                                </div>
+                                                <div class="comment-profile-txt ml20">
+                                                    <p class="bold">안태민</p>
+                                                    <p class="tiny-content"><span class="main-color">펀딩참여자</span><span class="gray"> | 20.04.02</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>감사합니다!! 14번째 펀딩 참여했어요!! 해외사이트에서 눈여겨 보고 있었는데, 좋은 제품 펀딩 기획해주셔서 감사합니다. 제품 받는 그날까지, 기대하고 있을게요 ^^</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -584,42 +656,6 @@
                                 </div>
                                 <a href="#" class="btn-stan tiny-content w-49p product-question"><i class="far fa-question-circle"></i> <span class="dis-pc">문의하기</span></a>
                                 <button class="btn-stan tiny-content w-49p product-share" data-target=".sns-share" onclick="targetActive(this)"><i class="fas fa-share-square"></i> <span class="dis-pc">공유하기</span></button>
-                                <div class="sns-share flex-j-space w-100p gray-box">
-                                    <div class="sns-share-content">
-                                        <button class="sns-share-close" data-target=".sns-share" onclick="targetActive(this)"></button>
-                                        <div class="sns-text border-bottom pb20">
-                                            <p class="sub-title bold main-color txt-center mt10 mb20">SNS 공유하기</p>
-                                            <p class="gray-dark large-title txt-center mb5">더 많이 알릴 수록 프로젝트는</p>
-                                            <p class="gray-dark large-title txt-center">성공에 가까워집니다.</p>
-                                        </div>
-                                        <div class="sns-share-btn-wrap flex-box flex-j-space pt20">
-                                            <button class="sns-share-btn icon-40 bg-sns bg-facebook" data-url="https://www.krahs123.co.kr/product.html" data-type="facebook">
-                                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                                            </button>
-                                            <button class="sns-share-btn icon-40 bg-sns bg-kakaostory" data-url="https://www.krahs123.co.kr/product.html" data-type="kakaoStory">
-                                                <i class="xi-kakaostory xi-x"></i>
-                                            </button>
-                                            <button class="sns-share-btn icon-40 bg-sns bg-blog" data-url="https://www.krahs123.co.kr/product.html" data-type="naver">
-                                                <i class="fas fa-bold"></i>
-                                            </button>
-                                            <button class="sns-share-btn icon-40 bg-sns bg-twitter" data-url="https://www.krahs123.co.kr/product.html" data-type="twitter" data-desc="[마지막앵콜] 다리에도 베개가 필요해요">
-                                                <i class="fab fa-twitter" aria-hidden="true"></i>
-                                            </button>
-                                            <button class="sns-share-btn icon-40 bg-sns bg-kakaotalk" 
-                                                id="kakao-link-btn" onclick="kakaoShare(this)" 
-                                                data-type="kakao"
-                                                data-url="https://www.krahs123.co.kr"
-                                                data-page="/product.html"
-                                                data-img="/images/main/main_1.jpg"
-                                                data-title="와디지-상품"
-                                                data-desc="[마지막앵콜] 다리에도 베개가 필요해요"
-                                            >
-                                                <i class="xi-kakaotalk xi-x"></i>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -722,6 +758,43 @@
                 </aside>
                 <!--우측메뉴끝-->
             </div>
+            <!--sns공유 모달-->
+            <div class="sns-share flex-j-space w-100p gray-box">
+                <div class="sns-share-content">
+                    <button class="sns-share-close" data-target=".sns-share" onclick="targetActive(this)"></button>
+                    <div class="sns-text border-bottom pb20">
+                        <p class="sub-title bold main-color txt-center mt10 mb20">SNS 공유하기</p>
+                        <p class="gray-dark large-title txt-center mb5">더 많이 알릴 수록 프로젝트는</p>
+                        <p class="gray-dark large-title txt-center">성공에 가까워집니다.</p>
+                    </div>
+                    <div class="sns-share-btn-wrap flex-box flex-j-space pt20">
+                        <button class="sns-share-btn icon-40 bg-sns bg-facebook" data-url="https://www.krahs123.co.kr/product.html" data-type="facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </button>
+                        <button class="sns-share-btn icon-40 bg-sns bg-kakaostory" data-url="https://www.krahs123.co.kr/product.html" data-type="kakaoStory">
+                            <i class="xi-kakaostory xi-x"></i>
+                        </button>
+                        <button class="sns-share-btn icon-40 bg-sns bg-blog" data-url="https://www.krahs123.co.kr/product.html" data-type="naver">
+                            <i class="fas fa-bold"></i>
+                        </button>
+                        <button class="sns-share-btn icon-40 bg-sns bg-twitter" data-url="https://www.krahs123.co.kr/product.html" data-type="twitter" data-desc="[마지막앵콜] 다리에도 베개가 필요해요">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </button>
+                        <button class="sns-share-btn icon-40 bg-sns bg-kakaotalk" 
+                            id="kakao-link-btn"
+                            data-type="kakao"
+                            data-url="https://www.krahs123.co.kr"
+                            data-page="/product.html"
+                            data-img="/images/main/main_1.jpg"
+                            data-title="와디지-상품"
+                            data-desc="[마지막앵콜] 다리에도 베개가 필요해요"
+                        >
+                            <i class="xi-kakaotalk xi-x"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--sns공유 모달끝-->
         </section>
     </main>
     <footer>

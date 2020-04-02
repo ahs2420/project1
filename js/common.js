@@ -11,7 +11,12 @@ $(function(){
         navContainerClass:"owl-nav"
     });
 });
-
+$(function(){
+    $(".toggle-target").click(function(){
+        var target = $($(this).data("target"));
+        target.toggle(300);
+    });
+});
 $(function(){
     $(window).scroll(function(){
         var windowOffset = $(window).scrollTop();
@@ -31,13 +36,13 @@ $(function(){
 $(function(){
     $(".mypage-btn").click(function(){
         $(".mypage-wrap").addClass("active");
-        $("body").css({overflow:"hidden",height:"100vh"});
+        //$("body").css({overflow:"hidden",height:"100vh"});
     });
 });
 $(function(){
     $(".mypage-close").click(function(){
         $(".mypage-wrap").removeClass("active");
-        $("body").css({overflow:"auto",height:"auto"});
+        //$("body").css({overflow:"auto",height:"auto"});
     });
 });
 $(function(){
@@ -103,11 +108,11 @@ function toggleBtn(btn){
         $("nav").addClass("active");
         activeAdd(btn);
         $(btn).addClass("close");
-        $("body").css({overflow:"hidden",height:"100vh"});
+        //$("body").css({overflow:"hidden",height:"100vh"});
     }else{
         activeRemove(btn);
         $(btn).removeClass("close");
-        $("body").css({overflow:"auto",height:"auto"});
+        //$("body").css({overflow:"auto",height:"auto"});
     }
 }
 function activeAdd(btn){

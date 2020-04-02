@@ -221,6 +221,8 @@ nav{
 .border-left{border-left: 1px solid #ccc;}
 .border-right{border-right: 1px solid #ccc;}
 .txt-center{text-align: center;}
+.txt-left{text-align: left;}
+.txt-right{text-align: right;}
 .dis-none{display: none;}
 .z-index-1{ z-index: 1;}
 .bold{font-weight: 700;}
@@ -316,6 +318,15 @@ nav{
     background-color: #fff;
     color: #ccc;
     border: 1px solid #ccc;
+}
+.btn-main{
+    background-color: var(--var-main-color);
+    color: #fff;
+    border-color: var(--var-main-color);
+}
+.btn-main:hover{
+    background-color: #fff;
+    color: var(--var-main-color);
 }
 .position-rel{
     position: relative;
@@ -685,6 +696,15 @@ nav.active{
 .black{
     color: #333;
 }
+.black-alpha{
+    color: rgba(0,0,0,0.8);
+}
+.white{
+    color: #fff;
+}
+.white-alpha{
+    color: rgba(255,255,255,0.8);
+}
 .nav-mobile-menu{
     height: calc(100vh - var(--var-nav-height));
     background: rgba(0,0,0,0.9);
@@ -914,6 +934,10 @@ nav.active{
     padding-bottom:0px;
     border-bottom:0;
 }
+.icon-round{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
 .icon-30{
     width: 30px;
     height: 30px;
@@ -949,6 +973,35 @@ nav.active{
     padding: 5px;
     background-color: var(--var-main-color);
     color: #fff;
+}
+.comment-form{
+    width: 100%;
+}
+.comment-form textarea{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 200px;
+}
+.comment-form .btn-wrap{
+    width: 100%;
+    text-align: right;
+}
+.comment-recomment-item{
+    background-color: rgba(214, 109, 47, 0.05);
+    margin-left: 30px;
+    position: relative;
+}
+.comment-recomment-item::before{
+    content: "\f3e5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    color: #aaa;
+    font-size: 1.5rem;
+    transform: rotate(180deg);
 }
 @media (max-width:1400px){
     .container{

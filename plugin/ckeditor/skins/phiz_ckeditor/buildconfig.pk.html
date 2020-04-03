@@ -1,0 +1,155 @@
+<<xe 기본설정 메뉴아이콘 버튼 제거>>
+phiz_cheditor/editor.html에 다음 예와 같이 설정한다.
+
+플러그인을 제거하거나 버튼을 제거시 xe기본설정에서 제거된 것이 나타난다.
+따라서 안보이던 버튼이 나타나면 같이 제거해 주어야한다.
+
+플러그인 제거를 원칙으로 하나 개별적으로 버튼을 제거할 필요가 있는 것은 버튼을 제거한다.
+버튼명은 대문자로 시작한다.
+
+settings.ckeconfig.removePlugins = 'undo,redo,pastetext';
+settings.ckeconfig.removeButtons = 'Save,Preview,Print,Cut,Copy,Paste,Source,Language';
+
+피시,모바일,본문,댓글 조건문은 아래와같다.
+// 모바일 댓글
+<!--@if($module_type == 'comment' && Mobile::isMobileCheckByAgent())-->
+settings.ckeconfig.removePlugins = 'undo,redo,pastetext';
+// 모바일 본문
+<!--@elseif($module_type !== 'comment' && Mobile::isMobileCheckByAgent())-->
+settings.ckeconfig.removePlugins = 'undo,redo,pastetext';
+// 피시 댓글
+<!--@elseif($module_type == 'comment' && !Mobile::isMobileCheckByAgent())-->
+settings.ckeconfig.removePlugins = 'undo,redo,pastetext';
+// 피시 본문
+		<!--@else-->
+settings.ckeconfig.removePlugins = 'undo,redo,pastetext';
+		<!--@endif-->
+
+xe 자체의 에디터컴포넌트 삭제는 관리자페이지에서 사용여부를 설정한다.
+
+<<<xe 기본설정 메뉴아이콘>>>
+undo : 실행 취소
+redo : 다시 실행 // undo 제거시 자동제거됨
+pastetext : 텍스트로 붙여넣기
+pastefromword : MS Word 에서 붙여넣기
+find : 찾기
+replace : 바꾸기 // find 제거시 자동삭제됨
+selectall : 모두 선택
+link : 링크 삽입/변경
+unlink : 링크 지우기 // link 삭제시 자동삭제됨
+anchor : 책갈피 // link 삭제시 자동삭제됨
+image : 이미지
+flash : 플래시
+table : 표 // table,tabletools 두개를 같이 제거해야함
+tabletools : 표도구 // table,tabletools 두개를 같이 제거해야함
+horizontalrule : 가로 줄 삽입
+pagebreak : 인쇄시 페이지 나누기 표시
+maximize : 최대화
+showblocks : 블록 보기
+// 대문자로 시작하는 것은 settings.ckeconfig.removeButtons = 'Source'; 구문으로 제거해야한다.
+Source : 소스
+Bold : 굵게
+Italic : 기울임꼴
+Underline : 밑줄
+Strike : 취소선
+Subscript : 아래 첨자
+Superscript : 위 첨자
+removeformat : 형식 지우기 // 플러그인을 제거한다.
+NumberedList : 순서 있는 목록
+BulletedList : 순서 없는 목록
+Outdent : 내어쓰기
+Indent : 들여쓰기
+Blockquote : 인용 단락
+div : Div 태그 생성
+JustifyLeft : 왼쪽 정렬
+JustifyCenter : 가운데 정렬
+JustifyRight : 오른쪽 정렬
+JustifyBlock : 양쪽 맞춤
+bidi : 문자 방향
+Styles : 스타일
+Format : 문단
+Font : 폰트
+FontSize : 글자크기
+TextColor : 글자 색상
+BGColor : 배경 색상
+<<xe 에디터컴포넌트 - xe 관리자페이지에서 제거>>
+emoticon : 이모티콘 출력
+image_link : 이미지 추가
+poll_maker : 설문조사
+image_gallery : 이미지 갤러리
+
+// ckeditor 자체에서 설정하는 방법도 있으나 xe에서는 부작용이 있을수 있으니 자제한다.
+<script>
+		CKEDITOR.replace( 'editor1', {
+			// Define the toolbar groups as it is a more accessible solution.
+			toolbarGroups: [
+				{"name":"basicstyles","groups":["basicstyles"]},
+				{"name":"links","groups":["links"]},
+				{"name":"paragraph","groups":["list","blocks"]},
+				{"name":"document","groups":["mode"]},
+				{"name":"insert","groups":["insert"]},
+				{"name":"styles","groups":["styles"]},
+				{"name":"about","groups":["about"]}
+			],
+			// Remove the redundant buttons from toolbar groups defined above.
+			removeButtons: 'Underline,Strike,Subscript,Superscript,Anchor,Styles,Specialchar'
+		} );
+	</script>
+
+//xe에서 사용하는 플러그인
+a11yhelp,
+basicstyles,
+bidi,
+blockquote,
+clipboard,
+colorbutton,
+colordialog,
+contextmenu,
+dialogadvtab,
+div,
+elementspath,
+enterkey,
+entities,
+find,
+flash,
+floatingspace,
+font,
+format,
+horizontalrule,
+htmlwriter,
+image,
+imageresize,
+indentblock,
+indentlist,
+justify,
+language,
+link,
+list,
+liststyle,
+magicline,
+maximize,
+onchange,
+pagebreak,
+pastefromword,
+pastetext,
+preview,
+print,
+removeformat,
+resize,
+save,
+selectall,
+showblocks,
+showborders,
+sourcearea,
+stylescombo,
+tab,
+table,
+tabletools,
+templates,
+toolbar,
+undo,
+wysiwygarea
+
+
+
+a11yhelp, basicstyles, bidi, blockquote, clipboard, colorbutton, colordialog, contextmenu, dialogadvtab, div, elementspath, enterkey, entities, find, flash, floatingspace, font, format, horizontalrule, htmlwriter, image, imageresize, indentblock, indentlist, justify, language, link, list, liststyle, magicline, maximize, onchange, pagebreak, pastefromword, pastetext, preview, print, removeformat, resize, save, selectall, showblocks, showborders, sourcearea, stylescombo, tab, table, tabletools, templates, toolbar, undo, wysiwygarea

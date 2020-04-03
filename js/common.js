@@ -5,7 +5,7 @@ $(function(){
         items:1,
         autoplay:true,
         autoplayTimeout:3000,
-        autoplayHoverPause:false,
+        autoplayHoverPause:true,
         dotsContainer:".owl_hero_dots",
         navContainer:".owl_hero_nav",
         navContainerClass:"owl-nav"

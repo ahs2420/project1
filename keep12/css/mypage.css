@@ -41,7 +41,7 @@ body {
 .box2-funReady {
     width: 100%;
     /* background-color: forestgreen; */
-    padding: 40px 66px;
+    padding: 40px 35px;
     overflow-y: scroll;
     height: calc(100vh - 56px);
 }
@@ -135,11 +135,11 @@ body {
 }
 
 /* 리워드 메뉴 부분 */
-/* .menu-box {
-    background-color: khaki;
+.menu-box {
+    /* background-color: khaki; */
     border-right: 1px solid rgba(235, 235, 235, 0.9);
 
-}    */
+}   
 /* 프로젝트 화살 바꾸는 부분 */
 .mypage-li-menu .fa-angle-down{
     transition: 0.3s;
@@ -253,7 +253,7 @@ body {
     padding: 16px 24px;
     position: relative;
     /* background-color: lawngreen; */
-    border-right: 1px solid rgba(235, 235, 235, 0.9);
+    /* border-right: 1px solid rgba(235, 235, 235, 0.9); */
 }
 
 .menu-text1 a {
@@ -354,23 +354,34 @@ color:rgba(0, 0, 0, .8);
     justify-content: space-between;
     /* background-color: saddlebrown; */
 }
+.ready-project{
+    font-size: 15px;
+    color: #60656a;
+    margin-bottom: 10px;
+}
 .ready-right a{
     font-size: 13px;
     color: #000;
 }
-/* .ready-pro-text{
-display: flex;
-} */
+.ready-pro-text span{
+font-size: 15px;
+color: #60656a;
+
+}
+.fun-text p{
+    font-size: 13px;
+    color: #60656a;
+    
+}
 
 
-
-.ready-pro-text h4::before {
+.ready-pro-text span::before {
     content: "";
     width: 8px;
     height: 8px;
     display: inline-block;
     border-radius: 50px;
-    background-color: tomato;
+    background-color: #ffb500;
     margin-right: 8px;
 }
 

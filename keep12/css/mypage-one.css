@@ -32,15 +32,17 @@ body {
     justify-content: space-between;
 }
 
-/* .menu-box {
-    flex-basis: 15%;
-    background-color: firebrick;
-} */
+.menu-box {
+    /* flex-basis: 15%; */
+    /* background-color: firebrick; */
+    border: 1px solid  rgba(187, 184, 184, 0.3);
+
+}
 
 .box2-funReady {
     width: 100%;
     /* background-color: forestgreen; */
-    padding: 40px 66px;
+    padding: 40px 35px;
     overflow-y: scroll;
     height: calc(100vh - 56px);
 }
@@ -74,11 +76,13 @@ body {
     color: #fff;
     vertical-align: baseline;
 }
-.userlogo i{
+
+.userlogo i {
     font-size: 18px;
     color: #fff;
 
 }
+
 .username {
     margin-left: 10px;
 }
@@ -138,10 +142,11 @@ body {
 
 } */
 /* 프로젝트 화살 바꾸는 부분 */
-.mypage-li-menu .fa-angle-down{
+.mypage-li-menu .fa-angle-down {
     transition: 0.3s;
 }
-.mypage-li-menu.active .fa-angle-down{
+
+.mypage-li-menu.active .fa-angle-down {
     transform: rotate(-180deg);
 }
 
@@ -149,7 +154,7 @@ body {
     width: 280px;
     height: auto;
     padding: 24px 24px;
-    background: linear-gradient( #8fcebb, #85cfd3);
+    background: linear-gradient(#8fcebb, #85cfd3);
     /* overflow: hidden; */
 }
 
@@ -215,7 +220,7 @@ body {
 
 .reward-box-num {
     margin-bottom: 10px;
-    
+
 }
 
 .reward-box-num a {
@@ -228,14 +233,14 @@ body {
     list-style: none;
     margin-left: 129px;
     font-size: 20px;
-    
-    
+
+
 }
 
 .reward-box p {
     font-size: 13px;
     color: #fff;
-    
+
 }
 
 .reward-box-url {
@@ -243,14 +248,14 @@ body {
     font-size: 13px;
     text-transform: uppercase;
     margin-top: 12px;
-    
+
 }
 
 .menu-text1 {
     padding: 16px 24px;
     position: relative;
     /* background-color: lawngreen; */
-    
+
 }
 
 .menu-text1 a {
@@ -308,64 +313,171 @@ body {
 }
 
 /* 기본 정보 박스 -> flex-basic-box */
-.flex-basic-box{
-display: flex;
+/* .flex-basic-adver {
+    display: flex;
+    justify-content: space-around;
+} */
+
+.basic-box {
+    /* background-color: royalblue; */
+    width: 100%;
+}
+/* .ba-adver-box {
+    background-color: rosybrown;
+    flex-basis: 20%;
+    margin-right: 9%;
+} */
+
+.basic-head {
+    margin-bottom: 20px;
+    /* background-color: royalblue; */
 }
 
-.basic-box{
-background-color: royalblue;
-flex-basis: 60%;
+.basic-box-one h1 {
+    font-size: 35px;
+    margin-bottom: -5px;
+
+}
+
+.di-la1 {
+    display: inline-block;
+}
+
+.di-la2 {
+    display: block;
 }
 
 
-.basic-head{
+
+::placeholder{
+    font-size: 17px;
+    color:#ccc
+}
+
+.ba-adver-guide{
+    width: 100%;
+    height:107px;
+    background-color: royalblue;
+    
+}
+
+.box-li1{line-height: 1.33;}
+.box-ra1{border-radius: 5px;}
+
+.fon-col { color: #90949c;}
+.fon-co2 { color: rgba(0, 0, 0, .4);}
+.fon-co3 { color: #60656a;}
+.fon-co4 { color: #00b2b2;}
+.fon-co5 { color: red;}
+.fon-co6 { color:#ccc;}
+.fon-co7 { color: rgba(0,0,0,.54);}
+
+.box-back1{background-color: #f0f2f5;}
+.box-back2{background-color: rebeccapurple}
+
+
+.fon-bor1 { border: 1px solid #ccc;}
+
+.fon-wei1 { font-weight: 700;}
+.fon-wei2 { font-weight: 600;}
+
+.fon-siz1 { font-size: 17px;}
+.fon-siz2 { font-size: 13px;}
+.fon-siz3 { font-size: 15px;}
+.fon-siz4 { font-size: 12px;}
+
+.text-padding1{padding: 0 26px 0 10px ;}
+.text-padding2{padding:10px ;}
+.text-padding3{padding:16px ;}
+
+.mar-top1 { margin-top: 10px;}
+.mar-top2 { margin-top: 30px;}
+
+.mar-bo1 { margin-bottom: 40px;}
+.mar-bo2 { margin-bottom: 20px;}
+.mar-bo3 { margin-bottom: 7px;}
+.mar-bo4 { margin-bottom: 50px;}
+.mar-bo5 { margin-bottom: 4px;}
+
+.mar-right1 { margin-right: 10px;}
+.mar-right1 { margin-right: 12%;}
+
+.mar-left1 { margin-left: 20px;}
+
+
+
+.wid1 { width: 100%;}
+.wid2 { width: 95%;}
+.wid3 { width: 90%;}
+.wid4 { width: 65%;}
+.wid5 { width: 20%;}
+/* .wid6 { width: 1000px;} */
+
+.hei1 { height: 48px;}
+.hei2 { height: 48px;}
+.hei3 { height: 48px;}
+
+
+
+
+
+/* 기본 요건 박스 */
+.requirements-box {
+    background-color: royalblue;
+    flex-basis: 60%;
+}
+
+.requirements-head {
     font-size: 13px;
     margin-bottom: 20px;
     /* background-color: royalblue; */
 }
-.ba-head1{
+
+.re-head1 {
     color: #90949c;
     font-weight: 600;
     /* background-color: burlywood; */
 }
-.basic-head i{
+
+.requirements-head i {
     font-weight: 600;
     font-size: 12px;
     color: rgba(0, 0, 0, .4);
 }
 
-.basic-box-one h1{
-    font-size: 36px;
-    margin-bottom: 16px;
-}
-.basic-box-one p{
-    font-size: 17px;
-    margin-bottom: 20px;
-}
+/* 광고 및 설명 부분 */
 
-/* 광고 박스 */
-.ba-adver-box{
-background-color: rosybrown;
-flex-basis: 25%;
+.flex-basic1{
+    display: flex;
+    justify-content:space-around;
+    
+    
 }
 
 
+.flex-basic2{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+}
 
 
+.ba-guide1,.ba-guide2,
+.ba-guide3,.ba-guide4,
+.ba-guide5,.ba-guide6,
+.ba-guide7{
+    width:20%;
+    position: absolute;
+    top: -20px;
+    right:12.8%;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 리워드 광고 부분*/
+/* textarea 박스*/
+textarea{
+    width: 100%;
+    /* resize: none; */
+    resize: vertical;
+    padding: 15px;
+}
 

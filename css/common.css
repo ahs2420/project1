@@ -172,6 +172,7 @@ nav{
 .ml40{margin-left: 40px;}
 .ml50{margin-left: 50px;}
 .ml100{margin-left: 100px;}
+.mr5{margin-right: 5px;}
 .mr10{margin-right: 10px;}
 .mr20{margin-right: 20px;}
 .mr30{margin-right: 30px;}
@@ -216,6 +217,9 @@ nav{
 .pr100{padding-right: 100px;}
 .pr3p{padding-right: 3%;}
 .pr5p{padding-right: 5%;}
+.border{border: 1px solid #333;}
+.border-gray{border: 1px solid #ccc;}
+.border-round-5{border-radius: 5px;}
 .border-bottom{border-bottom: 1px solid #ccc;}
 .border-top{border-top: 1px solid #ccc;}
 .border-left{border-left: 1px solid #ccc;}
@@ -240,14 +244,25 @@ nav{
     width: 100%;
     margin: 0 auto;
 }
+.container.max800{
+    max-width: 800px;
+}
 .container.max1000{
     max-width: 1000px;
+}
+.container.max1200{
+    max-width: 1200px;
 }
 .bg-img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.w-100{width: 100px;}
+.w-150{width: 150px;}
+.w-200{width: 200px;}
+.w-300{width: 300px;}
+
 .w-100p{width: 100%;}
 .w-90p{width: 90%;}
 .w-80p{width: 80%;}
@@ -332,6 +347,14 @@ nav{
     position: relative;
 }
 .input-stan{
+    padding: 0px 10px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.select-stan{
     padding: 0px 5px;
     height: 50px;
     line-height: 50px;
@@ -988,7 +1011,7 @@ nav.active{
     text-align: right;
 }
 .comment-recomment-item{
-    background-color: rgba(214, 109, 47, 0.05);
+    background-color: rgba(255, 89, 89, 0.05);
     margin-left: 30px;
     position: relative;
 }
@@ -1003,6 +1026,7 @@ nav.active{
     font-size: 1.5rem;
     transform: rotate(180deg);
 }
+
 @media (max-width:1400px){
     .container{
         padding-left:3%;
@@ -1198,6 +1222,23 @@ nav.active{
     .mobile-div,.mobile-div tr,.mobile-div td,.mobile-div th,.mobile-div tbody,.mobile-div thead{
         width: 100%;
         display: block;
+    }
+    .news-items:last-child .news-item{
+        width: 100%;
+    }
+    .news-items:last-child .news-item:nth-child(n+2){
+        margin-top: 20px;
+    }
+    .top-menu-m-side{
+        width: 20%;
+        text-align: left;
+    }
+    .top-menu-m-center{
+        width: 60%;
+        justify-content: center;
+    }
+    .top-menu-m-side:last-child{
+        text-align: right;
     }
 }
 @media (max-width:480px){

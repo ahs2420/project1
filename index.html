@@ -7,18 +7,18 @@
     <meta name="keywords" content="클라우드펀딩,ㄴㄴㄴ">
 
     <link rel="shortcut icon" href="./images/common/favicon.png" type="image/x-icon">
-    <meta name="og:title" content="와디지-메인"> 
+    <meta name="og:title" content="와디스-메인"> 
     <meta name="og:description" content="클라우드펀딩">
     <meta property="og:url" content="./index.html" />
     <meta property="og:type" content="website" />
     <meta name="og:image" content="https://www.krahs123.co.kr/images/common/favicon.png">
 
-    <meta name="twitter:title" content="와디지-메인"> 
+    <meta name="twitter:title" content="와디스-메인"> 
     <meta name="twitter:description" content="클라우드펀딩">
     <meta name="twitter:image" content="./images/common/favicon.png">
     <meta name="twitter:card" content="photo " />
 
-    <title>와디지 메인</title>
+    <title>와디스 메인</title>
     <link rel="stylesheet" href="./css/owl/owl.carousel.css">
     <link rel="stylesheet" href="./css/owl/owl.theme.default.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -38,23 +38,23 @@
 <body>
     <header>
         <nav>
-            <div class="flex-box flex-j-space flex-a-center container">
+            <div class="flex-box flex-j-space flex-a-center container top-menu">
                 <!--모바일 좌측 메뉴-->
-                <div class="dis-mobile flex-box">
+                <div class="dis-mobile flex-box top-menu-m-side">
                     <div class="search-btn-cover">
                         <button type="button" data-target="nav-mobile-menu" onclick="toggleBtn(this);"><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
                 <!--모바일 좌측 메뉴+ 마이페이지 메뉴 끝-->
                 <!--pc좌측, 모바일 중앙메뉴-->
-                <div class="nav-left flex-box flex-j-space">
+                <div class="nav-left flex-box flex-j-space top-menu-m-center">
                     <div class="logo">
                         <a href="./index.html"><span class="main-color">W</span>a<span class="main-color">T</span>his</a>
                     </div>
                     <div class="menu dis-pc">
                         <ul class="gnb-menu flex-box position-rel">
                             <li>
-                                <a class="hover-underline" href="./product.html">리워드</a>
+                                <a class="hover-underline" href="/sbg0212/reward-list.html">리워드</a>
                                 <!-- <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
@@ -64,7 +64,7 @@
                                 </ul> -->
                             </li>
                             <li>
-                                <a class="hover-underline" href="#">메뉴2</a>
+                                <a class="hover-underline" href="/sbg0212/ex2.html">공지사항</a>
                                 <!-- <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
@@ -85,13 +85,13 @@
                             </li>
                             <li>
                                 <a class="hover-underline" href="#">메뉴4</a>
-                                <!-- <ul class="sub-menu">
+                                <ul class="sub-menu">
                                     <li><a class="hover-main" href="#">서브메뉴1</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴2</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴3</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴4</a></li>
                                     <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                                </ul> -->
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -102,16 +102,16 @@
                     </div>
                     <div class="login-cover pl20">
                         <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
-                        <a class="hover-main" href="#">로그인</a>
-                        <a class="pl10 hover-main" href="#">회원가입</a>
+                        <a class="hover-main" href="/keep12/log-one.html">로그인/회원가입</a>
+                        <!-- <a class="pl10 hover-main" href="#">회원가입</a> -->
                     </div>
                     <div class="alerm-cover pl20">
-                        <a class="btn-stan btn-alerm laptop-dis-none" href="#">펀딩오픈 신청하기</a>
+                        <a class="btn-stan btn-alerm laptop-dis-none" href="/keep12/mypage.html">펀딩오픈 신청하기</a>
                     </div>
                 </div>
-                <div class="dis-mobile flex-box">
+                <div class="dis-mobile flex-box top-menu-m-side">
                     <div class="search-btn-cover">
-                        <a href="#"><i class="fas fa-sign-in-alt"></i></a>
+                        <a href="/keep12/log-one.html"><i class="fas fa-sign-in-alt"></i></a><!--로그인-->
                         <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
                     </div>
                 </div>
@@ -138,12 +138,35 @@
                             </div>
                         </div>
                     </li>
-                    <li class="flex-box flex-j-center">
+                    <!-- <li class="flex-box flex-j-center">
                         <a class="hover-main" href="#">로그인</a>
                         <a class="pl10 hover-main" href="#">회원가입</a>
+                    </li> -->
+                    <li class="mobile-menu">
+                        <a href="/sbg0212/reward-list.html">리워드</a>
                     </li>
                     <li class="mobile-menu">
-                        <button href="#">메뉴1</button>
+                        <a href="/sbg0212/ex2.html">공지사항</a>
+                        <!-- <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="mobile-menu">
+                        <a href="#">메뉴3</a>
+                        <!-- <ul class="sub-menu">
+                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
+                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="mobile-menu">
+                        <a href="#">메뉴4</a>
                         <ul class="sub-menu dis-none">
                             <li><a class="hover-main" href="#">서브메뉴1</a></li>
                             <li><a class="hover-main" href="#">서브메뉴2</a></li>
@@ -151,36 +174,6 @@
                             <li><a class="hover-main" href="#">서브메뉴4</a></li>
                             <li><a class="hover-main" href="#">서브메뉴5</a></li>
                         </ul>
-                    </li>
-                    <li class="mobile-menu">
-                        <button href="#">메뉴2</button>
-                        <!-- <ul class="sub-menu">
-                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="mobile-menu">
-                        <button href="#">메뉴3</button>
-                        <!-- <ul class="sub-menu">
-                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="mobile-menu">
-                        <button href="#">메뉴4</button>
-                        <!-- <ul class="sub-menu">
-                            <li><a class="hover-main" href="#">서브메뉴1</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴2</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴3</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴4</a></li>
-                            <li><a class="hover-main" href="#">서브메뉴5</a></li>
-                        </ul> -->
                     </li>
                 </ul>
             </div>
@@ -213,7 +206,7 @@
         <div class="hero">
             <div class="owl-carousel owl-hero owl-theme">
                 <div class="item">
-                    <a href="#">
+                    <a href="/product.html">
                         <div class="bg-hero-cover">
                             <div class="bg-img bg-main" style="background-image: url(./images/main/main_1.jpg);"></div>
                             <div class="container bg-txt">
@@ -225,7 +218,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="/product.html">
                         <div class="bg-hero-cover">
                             <div class="bg-img bg-main" style="background-image: url(./images/main/main_2.jpg);"></div>
                             <div class="container bg-txt">
@@ -237,7 +230,7 @@
                     </a>
                 </div>
                 <div class="item">
-                    <a href="#">
+                    <a href="/product.html">
                         <div class="bg-hero-cover">
                             <div class="bg-img bg-main" style="background-image: url(./images/main/main_3.jpg);"></div>
                             <div class="container bg-txt">
@@ -268,7 +261,7 @@
                 </h2>
                 <div class="flex-box flex-j-space flex-wrap">
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -296,7 +289,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -324,7 +317,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -352,7 +345,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -380,7 +373,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -408,7 +401,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -436,7 +429,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -464,7 +457,7 @@
                         </a>
                     </div>
                     <div class="item-box mb20">
-                        <a href="#">
+                        <a href="/product.html">
                             <div class="border-box">
                                 <div class="img-box">
                                     <img src="./images/product/item_1.jpg" alt="" />
@@ -505,7 +498,7 @@
                 <div class="reward-info-item bg-img bg-black-cover" style="background-image: url(./images/main/main-info-1.jpg);">
                     <div class="reward-info-text z-index-1">
                         <h1 class="title mb10">
-                            와디즈 소개
+                            와디스 소개
                         </h1>
                         <div class="small-title mb20">
                             다양한 우리가 모여 함께 더 나은 세상을 만듭니다.
@@ -546,11 +539,11 @@
         <section class="bg-gray">
             <div class="container">
                 <h1 class="title align-center">NEWS <span class="main-color">&</span> NOTICE</h1>
-                <div class="small-title align-center">와디즈의 다양한 소식을 빠르게 전달 드립니다.</div>
+                <div class="small-title align-center">와디스의 다양한 소식을 빠르게 전달 드립니다.</div>
                 <div class="flex-box flex-j-space flex-wrap">
                     <div class="news-items flex-box flex-wrap flex-j-space">
                         <div class="news-item">
-                            <a href="#">
+                            <a href="/sbg0212/ex3.html">
                                 <div class="main-color mb5 bold">[NOTICE]</div>
                                 <h3 class="sub-title bold text-max-line line2 mb10">Lorem, ipsum.</h3>
                                 <div class="small-title content text-max-line line3">
@@ -559,7 +552,7 @@
                             </a>
                         </div>
                         <div class="news-item">
-                            <a href="#">
+                            <a href="/sbg0212/ex3.html">
                                 <div class="main-color mb5 bold">[NOTICE]</div>
                                 <h3 class="sub-title bold text-max-line line2 mb10">Lorem, ipsum.</h3>
                                 <div class="small-title content text-max-line line3">
@@ -585,7 +578,7 @@
                     </div>
                     <div class="news-items flex-box flex-j-space flex-wrap">
                         <div class="news-item col-lg-6 col-sm-12">
-                            <a href="#">
+                            <a href="/sbg0212/ex3.html">
                                 <div class="main-color mb5 bold">[NOTICE]</div>
                                 <h3 class="sub-title bold text-max-line line2 mb10">Lorem, ipsum.</h3>
                                 <div class="small-title content text-max-line line3">
@@ -594,7 +587,7 @@
                             </a>
                         </div>
                         <div class="news-item col-lg-6 col-sm-12">
-                            <a href="#">
+                            <a href="/sbg0212/ex3.html">
                                 <div class="main-color mb5 bold">[NOTICE]</div>
                                 <h3 class="sub-title bold text-max-line line2 mb10">Lorem, ipsum.</h3>
                                 <div class="small-title content text-max-line line3">
@@ -603,7 +596,7 @@
                             </a>
                         </div>
                         <div class="news-item col-lg-12">
-                            <a href="#">
+                            <a href="/sbg0212/ex3.html">
                                 <div class="flex-box flex-wrap flex-j-space">
                                     <div class="w-49p col-sm-12">
                                         <div class="main-color mb5 bold">[NOTICE]</div>
@@ -628,22 +621,22 @@
                 <div class="flex-box flex-j-space flex-a-center flex-wrap ">
                     <div class="col-lg-5 col-sm-12" id="fadeInLeft">
                         <h1 class="title mb10"><span class="main-color">L</span>ocation</h1>
-                        <p class="mb20">와디즈로 오시는길</p>
+                        <p class="mb20">와디스로 오시는길</p>
                         <p class="gray mb10">주소</p>
-                        <p class="mb20">경기도 성남시 분당구 판교로 242 (삼평동) 판교 디지털 센터 A동 4층 402호</p>
+                        <p class="mb20">OO시 OO구 OO로 123 (OO동) OOOO센터 O동 O층 OO호</p>
                         <div class="flex-box flex-wrap">
                             <div class="col-lg-6 col-sm-12">
                                 <p class="gray mb10">Phone:</p>
-                                <p class="mb20"><a href="tel:1611-9056">1661-9056</a></p>
+                                <p class="mb20"><a href="tel:010-1234-1234">010-1234-1234</a></p>
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <p class="gray mb10">Email:</p>
-                                <p class="mb20"><a href="mailto:info@wadiz.kr">info@wadiz.kr</a></p>
+                                <p class="mb20"><a href="mailto:admin@krahs123.co.kr">admin@krahs123.co.kr</a></p>
                             </div>
                         </div>
                         <p class="gray mb10">Website:</p>
                         <p>
-                            <a href="https://wadiz.co.kr">https://wadiz.co.kr</a>
+                            <a href="https://www.krahs123.co.kr">https://www.krahs123.co.kr</a>
                         </p>
                     </div>
                     <div class="col-lg-6 col-sm-12 google-map" id="fadeInRight">
@@ -670,23 +663,23 @@
         <div class="footer-box"> 
             <div class="container flex-box flex-j-space flex-a-center flex-wrap">
                 <div class="footer-item pt30 pb30">
-                    <p>와디즈 대표 고객센터</p>
+                    <p>와디스 대표 고객센터</p>
                     <div>
-                        <a href="tel:1611-9056">1661-9056</a>
+                        <a href="tel:010-1234-1234">010-1234-1234</a>
                         <span class="gray ml5">
-                        | 카카오 채널@와디즈
+                        | 카카오 채널@와디스
                         </span>
                         <span class="gray ml5">
-                        | <a href="mailto:info@wadiz.kr">info@wadiz.kr</a>
+                        | <a href="mailto:admin@krahs123.co.kr">admin@krahs123.co.kr</a>
                         </span>
                         <span class="gray ml5">
-                        | 멤버십 고객센터 <a href="tel:1811-9090">1811-9090</a>
+                        | 멤버십 고객센터 <a href="tel:010-4567-1234">010-4567-1234</a>
                         </span>
                     </div>
                 </div>
                 <div class="footer-item pt30 pb30">
-                    <p class="gray">와디즈 플랫폼(주) | 대표이사 최동철 | 사업자등록번호 220-88-37661 | 경기도 성남시 분당구 판교로 242 (삼평동) 판교 디지털 센터 A동 4층 402호</p>
-                    <p>ⓒWADIZ Platform Co., Ltd</p>
+                    <p class="gray">와디스 플랫폼(주) | 대표이사 OOO | 사업자등록번호 000-00-00000 | OO시 OO구 OO로 123 (OO동) OOOO센터 O동 O층 OO호</p>
+                    <p>ⓒWATHIS Platform Co., Ltd</p>
                 </div>
             </div>
         </div>

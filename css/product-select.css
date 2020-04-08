@@ -1,0 +1,42 @@
+@charset 'utf-8';
+.buy-select-item{
+    position: relative;
+}
+.buy-select-item label{
+    cursor: pointer;
+    display: block;
+}
+.buy-select-item.off label{
+    cursor: not-allowed;
+}
+.buy-select-item.off label::after {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    text-align: center;
+    line-height: 100%;
+    background-color: var(--var-main-color-alpah);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    content: "마감된 펀딩 입니다.";
+    background-color: rgba(192, 192, 192, 0.5);
+    display: flex;
+    
+}
+.buy-select-items input:checked+.buy-select-item{
+    background-color: rgba(255, 89, 89, 0.1);
+}
+.buy-select-option{
+    display: none;
+}
+.buy-select-option select{
+    width: 100%;
+}
+.buy-select-items input:checked+.buy-select-item .buy-select-option{
+    display: block;
+}

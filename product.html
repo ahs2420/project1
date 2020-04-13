@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <script src="https://kit.fontawesome.com/5cf91d4eb4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script> -->
     <script src="./js/owl/owl.carousel.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/product.js"></script>
@@ -41,16 +41,16 @@
 <body>
     <header>
         <nav>
-            <div class="flex-box flex-j-space flex-a-center container">
+            <div class="flex-box flex-j-space flex-a-center container top-menu">
                 <!--모바일 좌측 메뉴-->
-                <div class="dis-mobile flex-box">
+                <div class="dis-mobile flex-box top-menu-m-side">
                     <div class="search-btn-cover">
                         <button type="button" data-target="nav-mobile-menu" onclick="toggleBtn(this);"><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
                 <!--모바일 좌측 메뉴+ 마이페이지 메뉴 끝-->
                 <!--pc좌측, 모바일 중앙메뉴-->
-                <div class="nav-left flex-box flex-j-space">
+                <div class="nav-left flex-box flex-j-space top-menu-m-center">
                     <div class="logo">
                         <a href="./index.html"><span class="main-color">W</span>a<span class="main-color">T</span>his</a>
                     </div>
@@ -112,7 +112,7 @@
                         <a class="btn-stan btn-alerm laptop-dis-none" href="#">펀딩오픈 신청하기</a>
                     </div>
                 </div>
-                <div class="dis-mobile flex-box">
+                <div class="dis-mobile flex-box top-menu-m-side">
                     <div class="search-btn-cover">
                         <a href="#"><i class="fas fa-sign-in-alt"></i></a>
                         <button class="mypage-btn icon-round bg-img icon-40" style="background-image: url(./images/common/profile-1.png);"></button>
@@ -652,7 +652,7 @@
                         <div class="product-btn-container">
                             <div class="flex-box flex-j-space flex-wrap">
                                 <div class="w-100p product-funding">
-                                    <a href="#" class="btn-stan tiny-content funding-btn on mb10"><i class="fas fa-gift"></i> 펀딩하기</a>
+                                    <a href="./product-select.html" class="btn-stan tiny-content funding-btn on mb10"><i class="fas fa-gift"></i> 펀딩하기</a>
                                 </div>
                                 <a href="#" class="btn-stan tiny-content w-49p product-question"><i class="far fa-question-circle"></i> <span class="dis-pc">문의하기</span></a>
                                 <button class="btn-stan tiny-content w-49p product-share" data-target=".sns-share" onclick="targetActive(this)"><i class="fas fa-share-square"></i> <span class="dis-pc">공유하기</span></button>
@@ -706,7 +706,7 @@
                         <div class="gray bold tiny-title mb10">리워드 선택</div>
                         <div class="product-reward-items">
                             <div class="product-reward-item gray-box pt20 pb20 pl5p pr5p mb20">
-                                <a href="#">
+                                <a href="./product-select.html">
                                     <p class="sub-title bold mb10">229,000원 펀딩</p>
                                     <p class="small-title bold mb10">솔로버드[블랙]</p>
                                     <p class="gray tiny-content bold">리워드</p>

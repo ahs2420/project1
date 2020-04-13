@@ -1,3 +1,4 @@
+document.write('<scr'+'ipt type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js" ></scr'+'ipt>');
 $(function(){
     $('.owl-hero').owlCarousel({
         loop:true,

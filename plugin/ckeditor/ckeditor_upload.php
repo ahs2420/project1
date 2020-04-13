@@ -46,12 +46,12 @@ $fileadd_size	= $_FILES['fileadd']['size'];		//파일크기
 
 $view_img = @getimagesize("$_SERVER[DOCUMENT_ROOT]/upload/".date(Y)."/".$filename);
 
-if(  $view_img[0] > 830 ) {
+if(  $view_img[0] > 2000 ) {
 
-	$upload_defaultpath="./upload/".date(Y)."/";
-	$db_table_small_image_size="830";
+	$upload_defaultpath=$_SERVER['DOCUMENT_ROOT'] ."/upload/".date(Y)."/";
+	$db_table_small_image_size="1200";
 
-	// TG_Image_Resize($upload_defaultpath, $filename, $filename, (int)($db_table_small_image_size), 100 , "small_","N");
+	TG_Image_Resize($upload_defaultpath, $filename, $filename, (int)($db_table_small_image_size), 100 , "small_","N");
 
 	$url = $up_path . '/small_'.$filename;
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/plugin/ckeditor/ckeditor.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .resive-container {
+            width: 1100px;
+            background-color: orange;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="resive-container">
+            <div class="resive-select-box">
+                <span>게시판</span>
+                <select name="" id="resive-title">
+                    <option value="">게시판 선택</option>
+                    <option value="">공지·알림</option>
+                    <option value="">이벤트·진행중</option>
+                    <option value="">이벤트·종료</option>
+                    <option value="">보도자료</option>
+                </select>
+                <select name="" id="resive-head">
+                    <option value="">말머리선택</option>
+                </select>
+            </div>
+            <div>
+                <span>제목</span>
+                <input type="text">
+            </div>
+            <div>
+                <span>파일첨부</span>
+                <textarea id="editor1" name="content" class="ckeditor"></textarea>
+                <script>
+                CKEDITOR.replace('editor1', {
+                    customConfig : '/plugin/ckeditor/config.js',
+                    width:'100%',
+                    height:'600',
+                    filebrowserImageUploadUrl: '/plugin/ckeditor/ckeditor_upload.php?type=Images&CKEditor=editor1&CKEditorFuncNum=1&langCode=ko'
+                });
+                </script>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
